@@ -1,0 +1,32 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "Kokou Kpadenou's Portfolio",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass ./sass/main.scss ./css/styles.css -w",
+    "devhttp:server": "live-server --port=8000",
+    "start": "npm-run-all --parallel devhttp:server watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css build/css/styles.css --output-style compressed",
+    "copy:index:html": "html-minifier --collapse-whitespace --remove-comments index.html -o build/index.html",
+    "copy:assets": "mkdir build/images build/js; cp -R ./images/* build/images; cp -t build favicon.png",
+    "copy:js": "uglifyjs --compress --mangle -o ./build/js/script.js -- ./js/script.js ",
+    "build": "npm-run-all compile:sass prefix:css compress:css copy:index:html copy:assets copy:js"
+  },
+  "author": "Kokou Kpadenou",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.6",
+    "html-minifier": "^3.5.21",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.1",
+    "uglify-js": "^3.5.2"
+  }
+}
