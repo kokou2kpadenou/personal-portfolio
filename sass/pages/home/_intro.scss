@@ -1,0 +1,13 @@
+.intro {
+  height: 50rem;
+  background-color: #f5f7fa;
+  padding: 4rem;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    padding-top: 10rem;
+  }
+}

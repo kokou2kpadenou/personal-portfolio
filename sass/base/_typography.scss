@@ -1,0 +1,13 @@
+
+
+body {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  font-family: 'Merienda', cursive;
+  &--1 {
+    font-size: 5rem;
+  }
+}

@@ -7,14 +7,15 @@
 }
 
 html {
-  font-size: 62.5%; // 62.5% * 16px = 10px = 1rem
+  font-size: 43.75%; // 43.75% * 16px = 7px = 1rem
 
   @supports (scroll-behavior: smooth) {
     scroll-behavior: smooth;
   }
-  
+
 }
 
 body {
   box-sizing: border-box;
+  
 }

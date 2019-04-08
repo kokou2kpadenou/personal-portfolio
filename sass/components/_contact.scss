@@ -1,0 +1,20 @@
+.contact {
+  list-style: none;
+  margin: 2rem;
+
+  &__elt {
+    display: inline-block;
+    &:not(:last-of-type) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+  }
+}
