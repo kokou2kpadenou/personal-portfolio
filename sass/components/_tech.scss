@@ -1,0 +1,49 @@
+.tech {
+  list-style: none;
+  margin: 2rem 0;
+  &__elt {
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    color: #444;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+
+    &:not(:last-of-type) {
+      margin-right: .5rem;
+    }
+  }
+
+  #html {
+    // background-color: #E44D26;
+    background-image: linear-gradient(to right, #fff, #E44D26);
+  }
+
+  #css {
+    // background-color: #3C99DC;
+    background-image: linear-gradient(to right, #fff, #3C99DC);
+
+  }
+
+  #js {
+    // background-color: #F0DB4F;
+    background-image: linear-gradient(to right, #fff, #F0DB4F);
+
+  }
+
+  #svg {
+    // background-color: red;
+    background-image: linear-gradient(to right, #fff, red);
+  }
+
+  #sass {
+    // background-color: #CD6799;
+    background-image: linear-gradient(to right, #fff, #CD6799);
+  }
+
+  #npm {
+    // background-color: #CC3534;
+    background-image: linear-gradient(to right, #fff, #CC3534);
+  }
+
+}

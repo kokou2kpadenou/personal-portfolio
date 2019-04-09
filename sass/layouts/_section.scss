@@ -1,0 +1,17 @@
+.section {
+  padding: 8rem 4rem;
+  text-align: center;
+  &:nth-of-type(2n+1) {
+    background-color: #f5f7fa;
+    background-image: radial-gradient(#f5f7fa, transparent);
+  }
+
+  .title--2 {
+    margin-bottom: 3rem;
+  }
+
+  .title--3 {
+    margin-bottom: 1.5rem;
+  }
+
+}

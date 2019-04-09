@@ -11,10 +11,15 @@
 
   &__link {
     text-decoration: none;
+    &:link,
+    &:visited {
+      color: inherit;
+    }
   }
 
   &__icon {
     width: 4rem;
     height: 4rem;
+    fill: currentcolor;
   }
 }

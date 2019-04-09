@@ -1,6 +1,9 @@
 .logo {
-  width: 6rem;
-  height: 6rem;
-  border: 1px solid #f00;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    width: 6rem;
+    height: 6rem;
+  }
 }
