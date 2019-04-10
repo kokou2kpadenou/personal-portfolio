@@ -1,0 +1,73 @@
+.carousel {
+  height: 70rem;
+  &__scene {
+    border: .5px solid rgba(0, 0, 0, .1);
+    border-radius: 6px;
+    position: relative;
+    width: 210px;
+    height: 140px;
+    margin: 80px auto;
+    perspective: 1000px;
+  }
+  &__content {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(-288px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+
+  &__cell {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 120px;
+    left: 10px;
+    top: 10px;
+    // border: 2px solid #000;
+    // line-height: 116px;
+    // font-size: 80px;
+    // font-weight: bold;
+    // color: #fff;
+    text-align: center;
+    transition: transform 1s, opacity 1s;
+    &:nth-child(9n+1) { background: hsla(  0, 100%, 50%, 0.8); }
+    &:nth-child(9n+2) { background: hsla( 40, 100%, 50%, 0.8); }
+    &:nth-child(9n+3) { background: hsla( 80, 100%, 50%, 0.8); }
+    &:nth-child(9n+4) { background: hsla(120, 100%, 50%, 0.8); }
+    &:nth-child(9n+5) { background: hsla(160, 100%, 50%, 0.8); }
+    &:nth-child(9n+6) { background: hsla(200, 100%, 50%, 0.8); }
+    &:nth-child(9n+7) { background: hsla(240, 100%, 50%, 0.8); }
+    &:nth-child(9n+8) { background: hsla(280, 100%, 50%, 0.8); }
+    &:nth-child(9n+0) { background: hsla(320, 100%, 50%, 0.8); }
+
+    &:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
+    &:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
+    &:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
+    &:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
+    &:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
+    &:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
+    &:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
+    &:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
+    &:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
+  }
+  &__panel {
+
+  }
+  &__icon {
+    width: 70px;
+    height: 70px;
+    // border: 2px solid #000;
+    margin-bottom: 7px;
+  }
+  &__title {
+    display: block;
+  }
+  &__desc {
+
+  }
+}
