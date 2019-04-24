@@ -7,7 +7,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css?family=Merienda:400,700|Roboto" rel="stylesheet">
     <title>Portfolio - Kokou Kpadenou</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <!-- container -->
@@ -151,14 +152,7 @@
             <li class="project__tile">
               <h3 class="project__title title title--3">Middlebrook Pediatric Website</h3>
               <p class="project__desc text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet molestiae nostrum ex quo quis ut consequuntur deserunt odio debitis autem, rem accusamus voluptates, eveniet earum, voluptas quaerat omnis. Est, saepe!</p>
-              <ul class="tech">
-                <li class="tech__elt" id="html">html5</li>
-                <li class="tech__elt" id="css">css3</li>
-                <li class="tech__elt" id="js">js</li>
-                <li class="tech__elt" id="svg">svg</li>
-                <li class="tech__elt" id="sass">sass</li>
-                <li class="tech__elt" id="npm">npm</li>
-              </ul>
+
               <ul class="project__viewer">
                 <li class="project__viewer__elt"><a class="btn btn--sm" href="">View</a></li>
                 <li class="project__viewer__elt"><a class="btn btn--sm" href="">Code</a></li>
@@ -167,14 +161,7 @@
             <li class="project__tile">
               <h3 class="project__title title title--3">Fylo landing page</h3>
               <p class="project__desc text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem velit vero, reprehenderit quo in sunt eligendi deleniti eveniet fugiat aliquam repellat laudantium culpa vel provident sapiente, commodi consequatur. Inventore, voluptatum.</p>
-              <ul class="tech">
-                <li class="tech__elt" id="html">html5</li>
-                <li class="tech__elt" id="css">css3</li>
-                <li class="tech__elt" id="js">js</li>
-                <li class="tech__elt" id="svg">svg</li>
-                <li class="tech__elt" id="sass">sass</li>
-                <li class="tech__elt" id="npm">npm</li>
-              </ul>
+
               <ul class="project__viewer">
                 <li class="project__viewer__elt"><a class="btn btn--sm" href="">View</a></li>
                 <li class="project__viewer__elt"><a class="btn btn--sm" href="">Code</a></li>
@@ -183,14 +170,7 @@
             <li class="project__tile">
               <h3 class="project__title title title--3">Huddle landing page</h3>
               <p class="project__desc text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis aliquam perspiciatis, similique, accusantium ad excepturi explicabo molestias, earum consequatur facilis iste perferendis maxime! Amet accusantium, illo temporibus quidem esse debitis.</p>
-              <ul class="tech">
-                <li class="tech__elt" id="html">html5</li>
-                <li class="tech__elt" id="css">css3</li>
-                <li class="tech__elt" id="js">js</li>
-                <li class="tech__elt" id="svg">svg</li>
-                <li class="tech__elt" id="sass">sass</li>
-                <li class="tech__elt" id="npm">npm</li>
-              </ul>
+
               <ul class="project__viewer">
                 <li class="project__viewer__elt"><a class="btn btn--sm" href="">View</a></li>
                 <li class="project__viewer__elt"><a class="btn btn--sm" href="">Code</a></li>
@@ -199,12 +179,7 @@
             <li class="project__tile">
               <h3 class="project__title title title--3">Simple Rental Website</h3>
               <p class="project__desc text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquid obcaecati, quidem eaque vero consequatur saepe esse cupiditate quia, iure perspiciatis natus assumenda illum voluptatum dolorum ratione! Nihil, obcaecati, placeat!</p>
-              <ul class="tech">
-                <li class="tech__elt" id="html">html5</li>
-                <li class="tech__elt" id="css">css3</li>
-                <li class="tech__elt" id="js">js</li>
-                <li class="tech__elt" id="svg">svg</li>
-              </ul>
+
               <ul class="project__viewer">
                 <li class="project__viewer__elt"><a class="btn btn--sm" href="">View</a></li>
                 <li class="project__viewer__elt"><a class="btn btn--sm" href="">Code</a></li>
@@ -217,161 +192,158 @@
         <section class="section">
           <h2 class="title title--2">Skills</h2>
           <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non consequatur, magnam beatae, ratione odit provident?</p>
-          <!-- div.scene>ul.carousel>li.carousel__cell*15>svg.carousel__icon>use[xlink:href="#" href="#"]^p.carousel_desc -->
-          <!-- div.scene>ul.carousel>li.carousel__cell*15>div.>svg.carousel__icon>use[xlink:href="#" href="#"]^span.carousel__title^p.carousel_desc -->
-          <!-- div.carousel>div.carousel__scene>ul.carousel__content>li.carousel__cell*15>div.carousel__panel>svg.carousel__icon>use[xlink:href="#" href="#"]^span.carousel__title^p.carousel_desc -->
-          <!-- div.carousel>div.carousel__scene>ul.carousel__content>li.carousel__cell*15>div.carousel__panel>svg.carousel__icon>use[xlink:href="#" href="#"]^span.carousel__title{$}^p.carousel_desc -->
+
           <!-- skill carousel -->
-          <div class="carousel">
-            <!-- carousel scene -->
-            <div class="carousel__scene">
-              <!-- carousel content -->
-              <ul class="carousel__content">
-                <!-- html5 carousel cell -->
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#icon-html5" href="#icon-html5"></use>
-                    </svg>
-                    <span class="carousel__title">html5</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <!-- css3 carousel cell -->
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#icon-css3" href="#icon-css3"></use>
-                    </svg>
-                    <span class="carousel__title">css3</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <!-- javascript carousel cell -->
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#icon-js" href="#icon-js"></use>
-                    </svg>
-                    <span class="carousel__title">javascript</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <!-- sass carousel cell -->
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#icon-sass" href="#icon-sass"></use>
-                    </svg>
-                    <span class="carousel__title">sass</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <!-- react carousel cell -->
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#icon-react" href="#icon-react"></use>
-                    </svg>
-                    <span class="carousel__title">react</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <!-- redux carousel cell -->
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#icon-redux" href="#icon-redux"></use>
-                    </svg>
-                    <span class="carousel__title">redux</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <!-- npm carousel cell -->
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#icon-npm" href="#icon-npm"></use>
-                    </svg>
-                    <span class="carousel__title">npm</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <!-- git carousel cell -->
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#icon-git" href="#icon-git"></use>
-                    </svg>
-                    <span class="carousel__title">git</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#" href="#"></use>
-                    </svg>
-                    <span class="carousel__title">9</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#" href="#"></use>
-                    </svg>
-                    <span class="carousel__title">10</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#" href="#"></use>
-                    </svg>
-                    <span class="carousel__title">11</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#" href="#"></use>
-                    </svg>
-                    <span class="carousel__title">12</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#" href="#"></use>
-                    </svg>
-                    <span class="carousel__title">13</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#" href="#"></use>
-                    </svg>
-                    <span class="carousel__title">14</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-                <li class="carousel__cell">
-                  <div class="carousel__panel">
-                    <svg class="carousel__icon">
-                      <use xlink:href="#" href="#"></use>
-                    </svg>
-                    <span class="carousel__title">15</span>
-                  </div>
-                  <p class="carousel_desc"></p>
-                </li>
-              </ul>
-            </div>
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <!-- carousel content -->
+            <ul class="swiper-wrapper">
+              <!-- html5 carousel cell -->
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#icon-html5" href="#icon-html5"></use>
+                  </svg>
+                  <span class="skill__title">html5</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <!-- css3 carousel cell -->
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#icon-css3" href="#icon-css3"></use>
+                  </svg>
+                  <span class="skill__title">css3</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <!-- javascript carousel cell -->
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#icon-js" href="#icon-js"></use>
+                  </svg>
+                  <span class="skill__title">javascript</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <!-- sass carousel cell -->
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#icon-sass" href="#icon-sass"></use>
+                  </svg>
+                  <span class="skill__title">sass</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <!-- react carousel cell -->
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#icon-react" href="#icon-react"></use>
+                  </svg>
+                  <span class="skill__title">react</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <!-- redux carousel cell -->
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#icon-redux" href="#icon-redux"></use>
+                  </svg>
+                  <span class="skill__title">redux</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <!-- npm carousel cell -->
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#icon-npm" href="#icon-npm"></use>
+                  </svg>
+                  <span class="skill__title">npm</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <!-- git carousel cell -->
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#icon-git" href="#icon-git"></use>
+                  </svg>
+                  <span class="skill__title">git</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#" href="#"></use>
+                  </svg>
+                  <span class="skill__title">9</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#" href="#"></use>
+                  </svg>
+                  <span class="skill__title">10</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#" href="#"></use>
+                  </svg>
+                  <span class="skill__title">11</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#" href="#"></use>
+                  </svg>
+                  <span class="skill__title">12</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#" href="#"></use>
+                  </svg>
+                  <span class="skill__title">13</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#" href="#"></use>
+                  </svg>
+                  <span class="skill__title">14</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+              <li class="swiper-slide">
+                <div class="skill__panel">
+                  <svg class="skill__icon">
+                    <use xlink:href="#" href="#"></use>
+                  </svg>
+                  <span class="skill__title">15</span>
+                </div>
+                <p class="carousel_desc"></p>
+              </li>
+            </ul>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
           </div>
         </section>
 
@@ -491,7 +463,7 @@
         </symbol>
       </defs>
     </svg>
-
+    <script src="./js/swiper.min.js"></script>
     <script src="./js/script.js"></script>
 
   </body>
