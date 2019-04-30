@@ -1,7 +1,13 @@
 .footer {
-  padding: 5rem 1rem;
-  background-color: #234b77;
-  color: #fff;
+  padding: 5rem;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  @include responsive(tablet-port) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  };
 }

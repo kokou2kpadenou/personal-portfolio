@@ -1,19 +1,68 @@
 .swiper {
   &-container {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 
   }
+
   &-slide {
     list-style: none;
-    width: 190px;
-    height: 190px;
+    width: 18rem;
+    height: 18rem;
+    @include responsive(tablet-port) {
+      width: 27rem;
+      height: 27rem;
+    };
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, .1);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+    background-color: var(--color-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
+    &-active {
+      background-color: rgba(255, 255, 255, .2);
+
+      .my-slide-1 {
+        color: #e34f26;
+      }
+      .my-slide-2 {
+        color: #1680C0;
+      }
+      .my-slide-3 {
+        color: #f7df1e;
+      }
+      .my-slide-4 {
+        color: #c69;
+      }
+      .my-slide-5 {
+        color: #00d8ff;
+      }
+      .my-slide-6 {
+        color: #764ABC;
+      }
+      .my-slide-7 {
+        color: #cb3837;
+      }
+      .my-slide-8 {
+        color: #f14e32;
+      }
+      .my-slide-9 {
+        color: #000;
+      }
+      .my-slide-10 {
+        color: #ffb13b;
+        .skill__icon {
+          --color-svg-stroke: #000;
+          --color-svg-fill: #ffb13b;
+        }
+      }
+    }
+  }
+
+  &-pagination {
+    &-bullet {
+      background-color: var(--color-primary);
+    }
   }
 }

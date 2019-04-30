@@ -1,0 +1,30 @@
+.quick-link {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  &__link {
+    // display: inline-block;
+    margin: 0 1rem;
+    &:not(:last-of-type) {
+      // border-right: 2px solid var(--color-secondary);
+      position: relative;
+      &::after {
+        content: '-';
+        position: absolute;
+        right: -1.7rem;
+      }
+    }
+    &:link,
+    &:visited {
+      color: var(--color-secondary);
+      text-decoration: none;
+    }
+    &:hover,
+    &:active {
+      color: var(--color-hover);
+      &::after {
+        color: var(--color-secondary);
+      }
+    }
+  }
+}

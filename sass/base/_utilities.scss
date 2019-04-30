@@ -1,0 +1,7 @@
+.header-name {
+  transform: translateY(-10rem);
+  transition: transform .8s;
+  &.show {
+    transform: translateY(0);
+  }
+}

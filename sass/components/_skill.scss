@@ -1,17 +1,34 @@
 .skill {
+
   &__panel {
-    
+    color: rgba(0, 0, 0, .2);
   }
+
   &__icon {
-    width: 70px;
-    height: 70px;
+    width: 7rem;
+    height: 7rem;
+    @include responsive(tablet-port) {
+      width: 10rem;
+      height: 10rem;
+    };
     margin-bottom: 10px;
+    fill: currentColor;
+    --color-svg-stroke: rgba(0, 0, 0, .2);
+    --color-svg-fill: #fff;
   }
+
   &__title {
     display: block;
     font-size: 3rem;
   }
-  &__desc {
 
+  &__desc {
+    display: none;
+  }
+
+  &__screen-desc {
+    margin: 4rem auto 0 auto;
+    max-width: 60rem;
+    min-height: 26rem;
   }
 }

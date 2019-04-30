@@ -3,31 +3,60 @@
   display: inline-block;
   border: .5px solid transparent;
   border-color: rgba(0, 0, 0, .1);
-
   transition: all .5s;
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__label {
+    display: block;
+  }
 
   &--bg {
     font-size: 2.5rem;
     border-radius: 5px;
-    padding: 1.5rem 12rem;
-    margin: 3rem;
+    padding: 1.5rem 18vw;
+    @include responsive(tablet-port) {
+      padding: 1.5rem 16rem;
+    };
   }
 
   &--sm {
-    // font-size: 2.rem;
     border-radius: 3px;
     padding: .7rem 2rem;
+    .btn__icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      vertical-align: middle;
+    }
+  }
+
+  &--menu {
+    display: block;
+    width: 17.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border-color: transparent;
+    .btn__icon {
+      width: 10rem;
+      height: 10rem;
+    }
+    .btn__label {
+      font-size: 3rem;
+    }
   }
 
   &:link,
   &:visited {
-    color: #000;
+    color: var(--color-primary);
   }
 
   &:hover {
+    border-color: rgba(0, 0, 0, .1);
     transform: translateY(-3px);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
-    color: #C5B358;
+    color: var(--color-hover);
   }
 
 

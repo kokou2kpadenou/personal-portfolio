@@ -5,7 +5,6 @@
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
-@import "base/themes";
 @import "base/utilities";
 
 
@@ -14,9 +13,10 @@
 @import "components/logo";
 @import "components/contact";
 @import "components/btn";
-@import "components/tech";
 @import "components/swiper";
 @import "components/skill";
+@import "components/cert";
+@import "components/quick-link";
 
 @import "layouts/section";
 @import "layouts/navigation";

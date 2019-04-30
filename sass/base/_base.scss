@@ -6,6 +6,13 @@
   box-sizing: inherit;
 }
 
+:root {
+  --color-primary: #3f3f3f;
+  --color-secondary: #fff;
+  --color-tertiary: #f9f9f9;
+  --color-hover: #C5B358;
+}
+
 html {
   font-size: 43.75%; // 43.75% * 16px = 7px = 1rem
 
@@ -17,5 +24,4 @@ html {
 
 body {
   box-sizing: border-box;
-  
 }
