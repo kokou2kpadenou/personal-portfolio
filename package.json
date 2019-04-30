@@ -14,10 +14,12 @@
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css build/css/styles.css --output-style compressed",
+    "compress:swiper:css": "node-sass css/swiper.min.css build/css/swiper.min.css --output-style compressed",
     "copy:index:html": "html-minifier --collapse-whitespace --remove-comments index.html -o build/index.html",
-    "copy:assets": "mkdir build/images build/js; cp -R ./images/* build/images; cp -t build favicon.png",
+    "copy:assets": "mkdir build/images build/docs build/js; cp -R ./images/* build/images; cp -R ./docs/* build/docs; cp -t build favicon-32x32.png",
     "copy:js": "uglifyjs --compress --mangle -o ./build/js/script.js -- ./js/script.js ",
-    "build": "npm-run-all compile:sass prefix:css compress:css copy:index:html copy:assets copy:js"
+    "copy:swiper:js": "uglifyjs --compress --mangle -o ./build/js/swiper.min.js -- ./js/swiper.min.js ",
+    "build": "npm-run-all compile:sass prefix:css compress:css compress:swiper:css copy:index:html copy:assets copy:js copy:swiper:js"
   },
   "author": "Kokou Kpadenou",
   "license": "ISC",
