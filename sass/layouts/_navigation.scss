@@ -24,8 +24,9 @@
     &::after {
       width: 4rem;
       height: 2px;
-      background-color: var(--color-primary);
+      background-color: var(--color-tilte);
       display: inline-block;
+      transition: all .4s;
     }
 
     &::before,
@@ -33,7 +34,6 @@
       content: "";
       position: absolute;
       left: 0;
-      transition: all .4s;
     }
 
     &::before {
@@ -49,6 +49,7 @@
     transform: translateY(-3px);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
     border-color: rgba(0, 0, 0, .1);
+    background-color: var(--color-tilte);
   }
 
 
@@ -56,22 +57,23 @@
     transform: translateY(-1px);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
     border-color: rgba(0, 0, 0, .1);
+    background-color: var(--color-tilte);
   }
 
 
 
   &__button:hover &__icon {
-    background-color: var(--color-hover);
+    background-color: var(--color-secondary);
   }
 
   &__button:hover &__icon::before {
     top: -1.2rem;
-    background-color: var(--color-hover);
+    background-color: var(--color-secondary);
   }
 
   &__button:hover &__icon::after {
     top: 1.2rem;
-    background-color: var(--color-hover);
+    background-color: var(--color-secondary);
   }
 
 

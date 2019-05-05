@@ -9,7 +9,7 @@
   --color-primary: #3f3f3f;
   --color-secondary: #fff;
   --color-tertiary: #f9f9f9;
-  --color-hover: #C5B358; }
+  --color-tilte: #1083ae; }
 
 html {
   font-size: 43.75%; }
@@ -26,20 +26,19 @@ body {
   color: var(--color-primary); }
 
 .title {
-  font-family: 'Merienda', cursive; }
+  font-family: 'Merienda', cursive;
+  color: var(--color-tilte); }
   .title--1 {
     font-size: 8vw; }
     @media only screen and (min-width: 37.5em) {
       .title--1 {
         font-size: 7.5rem; } }
   .title--1-bis {
-    font-size: 4vw;
-    display: grid;
-    justify-items: center; }
+    font-size: 5vw;
+    text-align: center; }
     @media only screen and (min-width: 37.5em) {
       .title--1-bis {
-        font-size: 4rem;
-        display: block; } }
+        font-size: 4rem; } }
   .title--2 {
     position: relative;
     font-size: 6vw; }
@@ -49,7 +48,7 @@ body {
     .title--2::after {
       content: "";
       display: block;
-      background-color: var(--color-primary);
+      background-color: var(--color-tilte);
       height: 4px;
       width: 6rem;
       margin: 1rem auto 3rem auto; }
@@ -57,6 +56,7 @@ body {
     font-size: 2.7rem; }
 
 .sub-title {
+  color: var(--color-tilte);
   font-size: 4.5vw; }
   @media only screen and (min-width: 37.5em) {
     .sub-title {
@@ -66,7 +66,7 @@ body {
   line-height: 3.2rem; }
 
 .header-name {
-  transform: translateY(-10rem);
+  transform: translateY(-11rem);
   transition: transform .8s; }
   .header-name.show {
     transform: translateY(0); }
@@ -81,7 +81,7 @@ body {
 
 .contact {
   list-style: none;
-  margin: 3rem 0 1.5rem 0; }
+  margin: 2rem 0; }
   .contact__elt {
     display: inline-block;
     margin: 1rem 1.5rem; }
@@ -142,12 +142,13 @@ body {
     .btn--menu .btn__label {
       font-size: 3rem; }
   .btn:link, .btn:visited {
-    color: var(--color-primary); }
+    color: var(--color-tilte); }
   .btn:hover {
     border-color: rgba(0, 0, 0, 0.1);
     transform: translateY(-3px);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
-    color: var(--color-hover); }
+    color: var(--color-secondary);
+    background-color: var(--color-tilte); }
   .btn:active {
     transform: translateY(-1px);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); }
@@ -286,8 +287,8 @@ body {
         color: var(--color-secondary); }
 
 .section {
-  padding: 14rem 4rem 8rem 4rem;
-  text-align: center; }
+  text-align: center;
+  padding: 14rem 4rem 8rem 4rem; }
   .section:nth-of-type(2n+1) {
     background-color: var(--color-tertiary); }
   .section__content {
@@ -318,13 +319,13 @@ body {
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 4rem;
     height: 2px;
-    background-color: var(--color-primary);
-    display: inline-block; }
+    background-color: var(--color-tilte);
+    display: inline-block;
+    transition: all .4s; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
-    left: 0;
-    transition: all .4s; }
+    left: 0; }
   .navigation__icon::before {
     top: -.9rem; }
   .navigation__icon::after {
@@ -333,23 +334,25 @@ body {
 .navigation__button:hover {
   transform: translateY(-3px);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
-  border-color: rgba(0, 0, 0, 0.1); }
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--color-tilte); }
 
 .navigation__button:active {
   transform: translateY(-1px);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-  border-color: rgba(0, 0, 0, 0.1); }
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--color-tilte); }
 
 .navigation__button:hover .navigation__icon {
-  background-color: var(--color-hover); }
+  background-color: var(--color-secondary); }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1.2rem;
-  background-color: var(--color-hover); }
+  background-color: var(--color-secondary); }
 
 .navigation__button:hover .navigation__icon::after {
   top: 1.2rem;
-  background-color: var(--color-hover); }
+  background-color: var(--color-secondary); }
 
 .navigation__checkbox:checked ~ .header .navigation__button .navigation__icon {
   background-color: transparent; }
@@ -431,21 +434,24 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  min-height: 12rem;
   z-index: 10; }
 
 .intro {
-  height: 50rem;
+  height: 60rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center; }
   .intro__content {
     padding-top: 10rem; }
+  .intro .contact {
+    color: #f66; }
 
 .footer {
   padding: 5rem;
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
+  background-color: #999;
+  color: rgba(255, 255, 255, 0.4);
   text-align: center;
   font-size: 1.7rem; }
   @media only screen and (min-width: 37.5em) {

@@ -1,5 +1,5 @@
 .intro {
-  height: 50rem;
+  height: 60rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -8,4 +8,9 @@
   &__content {
     padding-top: 10rem;
   }
+
+  .contact {
+    color: #f66;
+  }
+
 }

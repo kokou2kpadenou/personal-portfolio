@@ -6,6 +6,7 @@ body {
 
 .title {
   font-family: 'Merienda', cursive;
+  color: var(--color-tilte);
   &--1 {
     font-size: 8vw;
     @include responsive(tablet-port) {
@@ -13,12 +14,10 @@ body {
     };
   }
   &--1-bis {
-    font-size: 4vw;
-    display: grid;
-    justify-items: center;
+    font-size: 5vw;
+    text-align: center;
     @include responsive(tablet-port) {
       font-size: 4rem;
-      display: block;
     };
   }
 
@@ -32,7 +31,7 @@ body {
     &::after {
       content: "";
       display: block;
-      background-color: var(--color-primary);
+      background-color: var(--color-tilte);
       height: 4px;
       width: 6rem;
       margin: 1rem auto 3rem auto;
@@ -45,12 +44,12 @@ body {
 }
 
 .sub-title {
+  color: var(--color-tilte);
   font-size: 4.5vw;
   @include responsive(tablet-port) {
     font-size: 3.5rem;
   };
 }
-
 
 .text {
   line-height: 3.2rem;

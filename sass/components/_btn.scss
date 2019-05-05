@@ -49,14 +49,15 @@
 
   &:link,
   &:visited {
-    color: var(--color-primary);
+    color: var(--color-tilte);
   }
 
   &:hover {
     border-color: rgba(0, 0, 0, .1);
     transform: translateY(-3px);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
-    color: var(--color-hover);
+    color: var(--color-secondary);
+    background-color: var(--color-tilte);
   }
 
 
