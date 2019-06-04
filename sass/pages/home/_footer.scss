@@ -1,8 +1,9 @@
 .footer {
-  padding: 5rem;
-  // background-color: var(--color-primary);
-  background-color: #999;
-  // color: var(--color-secondary);
+  padding: 5rem 1.5rem;
+  @include responsive(tablet-port) {
+    padding: 5rem;
+  };
+  background-color: #555;
   color: rgba(255, 255, 255, .4);
   text-align: center;
   font-size: 1.7rem;

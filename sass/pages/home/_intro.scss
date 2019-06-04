@@ -4,6 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   &__content {
     padding-top: 10rem;
@@ -13,4 +16,35 @@
     color: #f66;
   }
 
+}
+
+.no-webp .intro {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro.jpg);
+  @include responsive(tablet-port) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro_600.jpg);
+  };
+  @include responsive(tablet-land) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro_900.jpg);
+  };
+  @include responsive(desktop) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro_1200.jpg);
+  };
+  @include responsive(big-desktop) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro_1400.jpg);
+  };
+}
+.webp .intro {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro.webp);
+  @include responsive(tablet-port) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro_600.webp);
+  };
+  @include responsive(tablet-land) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro_900.webp);
+  };
+  @include responsive(desktop) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro_1200.webp);
+  };
+  @include responsive(big-desktop) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro_1400.webp);
+  };
 }

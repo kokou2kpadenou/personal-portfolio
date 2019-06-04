@@ -109,7 +109,7 @@ body {
 .btn {
   text-decoration: none;
   display: inline-block;
-  border: .5px solid transparent;
+  border: 1px solid transparent;
   border-color: rgba(0, 0, 0, 0.1);
   transition: all .5s; }
   .btn__icon {
@@ -244,13 +244,13 @@ body {
       .cert__elt:nth-of-type(2n) {
         justify-self: start; } }
     .cert__elt:nth-of-type(1) a {
-      background-image: url(../images/responsive-web-design.png); }
+      background-image: url(../images/education/responsive-web-design.jpg); }
     .cert__elt:nth-of-type(2) a {
-      background-image: url(../images/javascript-algorithms-and-data-structures.png); }
+      background-image: url(../images/education/javascript-algorithms-and-data-structures.jpg); }
     .cert__elt:nth-of-type(3) a {
       background-image: url(); }
     .cert__elt:nth-of-type(4) a {
-      background-image: url(../images/eCertificate.png); }
+      background-image: url(../images/education/eCertificate.jpg); }
   .cert__link {
     width: 30rem;
     height: 18rem;
@@ -312,7 +312,8 @@ body {
   padding: 1rem;
   border: 1px solid transparent;
   border-radius: 5px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .4s; }
 
 .navigation__icon {
   position: relative; }
@@ -378,7 +379,7 @@ body {
   position: fixed;
   top: -150rem;
   left: 0;
-  padding: 12rem 4rem 4rem 4rem;
+  padding: 15rem 4rem 4rem 4rem;
   background-color: var(--color-secondary);
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
   max-height: 100vh;
@@ -427,7 +428,7 @@ body {
   top: -1px;
   left: auto;
   right: auto;
-  padding: 2rem 5rem;
+  padding: 2rem 1.5rem;
   background-color: var(--color-secondary);
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
   display: flex;
@@ -436,24 +437,63 @@ body {
   width: 100%;
   min-height: 12rem;
   z-index: 10; }
+  @media only screen and (min-width: 37.5em) {
+    .header {
+      padding: 2rem 5rem; } }
 
 .intro {
   height: 60rem;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
   .intro__content {
     padding-top: 10rem; }
   .intro .contact {
     color: #f66; }
 
+.no-webp .intro {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro.jpg); }
+  @media only screen and (min-width: 37.5em) {
+    .no-webp .intro {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro_600.jpg); } }
+  @media only screen and (min-width: 56.25em) {
+    .no-webp .intro {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro_900.jpg); } }
+  @media only screen and (min-width: 75em) {
+    .no-webp .intro {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro_1200.jpg); } }
+  @media only screen and (min-width: 93.75em) {
+    .no-webp .intro {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro_1400.jpg); } }
+
+.webp .intro {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro.webp); }
+  @media only screen and (min-width: 37.5em) {
+    .webp .intro {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro_600.webp); } }
+  @media only screen and (min-width: 56.25em) {
+    .webp .intro {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro_900.webp); } }
+  @media only screen and (min-width: 75em) {
+    .webp .intro {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro_1200.webp); } }
+  @media only screen and (min-width: 93.75em) {
+    .webp .intro {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro_1400.webp); } }
+
 .footer {
-  padding: 5rem;
-  background-color: #999;
+  padding: 5rem 1.5rem;
+  background-color: #555;
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
   font-size: 1.7rem; }
+  @media only screen and (min-width: 37.5em) {
+    .footer {
+      padding: 5rem; } }
   @media only screen and (min-width: 37.5em) {
     .footer {
       display: flex;

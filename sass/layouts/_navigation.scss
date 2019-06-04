@@ -13,6 +13,7 @@
     border: 1px solid transparent;
     border-radius: 5px;
     cursor: pointer;
+    transition: all .4s;
   }
 
 
@@ -110,7 +111,7 @@
     position: fixed;
     top: -150rem;
     left: 0;
-    padding: 12rem 4rem 4rem 4rem;
+    padding: 15rem 4rem 4rem 4rem;
     background-color: var(--color-secondary);
     box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
 
