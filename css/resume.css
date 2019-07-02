@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+:root {
+  --color-primary: #3f3f3f;
+  --color-secondary: #fff;
+  --color-tertiary: #f9f9f9;
+  --color-tilte: #1083ae; }
+
+html {
+  font-size: 43.75%; }
+  @supports (scroll-behavior: smooth) {
+    html {
+      scroll-behavior: smooth; } }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-primary); }
+
+.title {
+  font-family: 'Merienda', cursive;
+  color: var(--color-tilte); }
+  .title--1 {
+    font-size: 8vw; }
+    @media only screen and (min-width: 37.5em) {
+      .title--1 {
+        font-size: 7.5rem; } }
+  .title--1-bis {
+    font-size: 5vw;
+    text-align: center; }
+    @media only screen and (min-width: 37.5em) {
+      .title--1-bis {
+        font-size: 4rem; } }
+  .title--2 {
+    position: relative;
+    font-size: 6vw; }
+    @media only screen and (min-width: 37.5em) {
+      .title--2 {
+        font-size: 6rem; } }
+    .title--2::after {
+      content: "";
+      display: block;
+      background-color: var(--color-tilte);
+      height: 4px;
+      width: 6rem;
+      margin: 1rem auto 3rem auto; }
+  .title--3 {
+    font-size: 2.7rem; }
+
+.sub-title {
+  color: var(--color-tilte);
+  font-size: 4.5vw; }
+  @media only screen and (min-width: 37.5em) {
+    .sub-title {
+      font-size: 3.5rem; } }
+
+.text {
+  line-height: 3.2rem; }
+
+.blockquote {
+  color: #f66;
+  text-align: center;
+  font-size: 1.6rem; }
