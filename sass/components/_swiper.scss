@@ -24,38 +24,59 @@
       background-color: rgba(255, 255, 255, .2);
 
       .my-slide-1 {
-        color: #e34f26;
-      }
-      .my-slide-2 {
-        color: #1680C0;
-      }
-      .my-slide-3 {
-        color: #f7df1e;
-      }
-      .my-slide-4 {
-        color: #c69;
-      }
-      .my-slide-5 {
-        color: #00d8ff;
-      }
-      .my-slide-6 {
-        color: #764ABC;
-      }
-      .my-slide-7 {
-        color: #cb3837;
-      }
-      .my-slide-8 {
-        color: #f14e32;
-      }
-      .my-slide-9 {
         color: #000;
       }
-      .my-slide-10 {
+      // html
+      .my-slide-2 {
+        color: #e34f26;
+      }
+      // css
+      .my-slide-3 {
+        color: #1680C0;
+      }
+      // javascript
+      .my-slide-4 {
+        color: #f7df1e;
+      }
+      // svg
+      .my-slide-5 {
         color: #ffb13b;
         .skill__icon {
           --color-svg-stroke: #000;
           --color-svg-fill: #ffb13b;
         }
+      }
+      // sass
+      .my-slide-6 {
+        color: #c69;
+      }
+      // react
+      .my-slide-7 {
+        color: #00d8ff;
+      }
+      // redux
+      .my-slide-8 {
+        color: #764ABC;
+      }
+      // node
+      .my-slide-9 {
+        color: #215732;
+      }
+      // npm
+      .my-slide-10 {
+        color: #cb3837;
+      }
+      // git
+      .my-slide-11 {
+        color: #f14e32;
+      }
+      // more
+      .my-slide-12 {
+        color: #7f7f7f;
+      }
+      // sql
+      .my-slide-13 {
+        color: rgba(255, 0, 0, .6);
       }
     }
   }

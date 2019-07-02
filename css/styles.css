@@ -65,6 +65,11 @@ body {
 .text {
   line-height: 3.2rem; }
 
+.blockquote {
+  color: #f66;
+  text-align: center;
+  font-size: 1.6rem; }
+
 .header-name {
   transform: translateY(-11rem);
   transition: transform .8s; }
@@ -105,6 +110,13 @@ body {
     width: 4rem;
     height: 4rem;
     fill: currentcolor; }
+
+.link:link, .link:visited {
+  color: var(--color-tilte);
+  text-decoration: none; }
+
+.link:hover, .link:active {
+  color: #f66; }
 
 .btn {
   text-decoration: none;
@@ -175,28 +187,34 @@ body {
   .swiper-slide-active {
     background-color: rgba(255, 255, 255, 0.2); }
     .swiper-slide-active .my-slide-1 {
-      color: #e34f26; }
-    .swiper-slide-active .my-slide-2 {
-      color: #1680C0; }
-    .swiper-slide-active .my-slide-3 {
-      color: #f7df1e; }
-    .swiper-slide-active .my-slide-4 {
-      color: #c69; }
-    .swiper-slide-active .my-slide-5 {
-      color: #00d8ff; }
-    .swiper-slide-active .my-slide-6 {
-      color: #764ABC; }
-    .swiper-slide-active .my-slide-7 {
-      color: #cb3837; }
-    .swiper-slide-active .my-slide-8 {
-      color: #f14e32; }
-    .swiper-slide-active .my-slide-9 {
       color: #000; }
-    .swiper-slide-active .my-slide-10 {
+    .swiper-slide-active .my-slide-2 {
+      color: #e34f26; }
+    .swiper-slide-active .my-slide-3 {
+      color: #1680C0; }
+    .swiper-slide-active .my-slide-4 {
+      color: #f7df1e; }
+    .swiper-slide-active .my-slide-5 {
       color: #ffb13b; }
-      .swiper-slide-active .my-slide-10 .skill__icon {
+      .swiper-slide-active .my-slide-5 .skill__icon {
         --color-svg-stroke: #000;
         --color-svg-fill: #ffb13b; }
+    .swiper-slide-active .my-slide-6 {
+      color: #c69; }
+    .swiper-slide-active .my-slide-7 {
+      color: #00d8ff; }
+    .swiper-slide-active .my-slide-8 {
+      color: #764ABC; }
+    .swiper-slide-active .my-slide-9 {
+      color: #215732; }
+    .swiper-slide-active .my-slide-10 {
+      color: #cb3837; }
+    .swiper-slide-active .my-slide-11 {
+      color: #f14e32; }
+    .swiper-slide-active .my-slide-12 {
+      color: #7f7f7f; }
+    .swiper-slide-active .my-slide-13 {
+      color: rgba(255, 0, 0, 0.6); }
 
 .swiper-pagination-bullet {
   background-color: var(--color-primary); }
@@ -244,13 +262,13 @@ body {
       .cert__elt:nth-of-type(2n) {
         justify-self: start; } }
     .cert__elt:nth-of-type(1) a {
-      background-image: url(../images/education/responsive-web-design.jpg); }
+      background-image: url(../images/background/responsive-web-design.jpg); }
     .cert__elt:nth-of-type(2) a {
-      background-image: url(../images/education/javascript-algorithms-and-data-structures.jpg); }
+      background-image: url(../images/background/javascript-algorithms-and-data-structures.jpg); }
     .cert__elt:nth-of-type(3) a {
-      background-image: url(); }
+      background-image: url(../images/background/front-end-libraries.jpg); }
     .cert__elt:nth-of-type(4) a {
-      background-image: url(../images/education/eCertificate.jpg); }
+      background-image: url(../images/background/eCertificate.jpg); }
   .cert__link {
     width: 30rem;
     height: 18rem;
@@ -291,6 +309,8 @@ body {
   padding: 14rem 4rem 8rem 4rem; }
   .section:nth-of-type(2n+1) {
     background-color: var(--color-tertiary); }
+  .section:first-child {
+    border-bottom: 0.5px solid var(--color-tilte); }
   .section__content {
     max-width: 140rem;
     margin: 0 auto; }
@@ -379,7 +399,7 @@ body {
   position: fixed;
   top: -150rem;
   left: 0;
-  padding: 15rem 4rem 4rem 4rem;
+  padding: 15rem 4rem 1rem 4rem;
   background-color: var(--color-secondary);
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
   max-height: 100vh;
@@ -388,6 +408,7 @@ body {
   z-index: 9; }
   .navigation__menu__content {
     list-style: none;
+    padding-bottom: 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }

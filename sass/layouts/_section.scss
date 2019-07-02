@@ -6,6 +6,10 @@
     background-color: var(--color-tertiary);
   }
 
+  &:first-child {
+    border-bottom: .5px solid var(--color-tilte);
+  }
+
   &__content {
     max-width: 140rem;
     margin: 0 auto;
