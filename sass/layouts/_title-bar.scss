@@ -1,0 +1,52 @@
+.title-bar {
+  display: grid;
+  grid-template-columns: 4rem 1fr 4rem;
+  grid-gap: 1rem;
+  align-items: center;
+  max-height: 500rem;
+
+  &__checkbox {
+    display: none;
+    &:checked ~ .title-bar__content {
+      max-height: 0;
+      transition: max-height 1s ease-out;
+    }
+
+    &:checked ~ .title-bar .expand  {
+      display: none;
+    }
+    &:checked ~ .title-bar .contract  {
+      display: block;
+    }
+    &:not(:checked) ~ .title-bar .expand  {
+      display: block;
+    }
+    &:not(:checked) ~ .title-bar .contract  {
+      display: none;
+    }
+
+  }
+
+  &__title {
+    grid-column: 2 / 3;
+
+  }
+
+  &__icon {
+    grid-column: 1 / 2;
+    width: 4rem;
+    height: 4rem;
+    fill: var(--color-title);
+  }
+
+  &__expand {
+    grid-column: 3 / 4;
+
+  }
+
+  &__content {
+    overflow: hidden;
+    transition: max-height 1s ease-in;
+  }
+
+}
