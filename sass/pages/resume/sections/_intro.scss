@@ -1,23 +1,28 @@
 .intro {
-  grid-column:  1 / 2;
-  grid-row: 1 / 2 ;
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  grid-column-gap: 20px;
+  text-align: center;
+  @include responsive(tablet-land){
+    text-align: left;
+    grid-column:  1 / 2;
+    grid-row: 1 / 2 ;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-column-gap: 20px;
 
-  &__pic {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
+    &__pic {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
 
-  &__name {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    align-self: center;
-  }
+    &__name {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      align-self: center;
+    }
 
-  &__conctact {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
+    &__conctact {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+  };
 }

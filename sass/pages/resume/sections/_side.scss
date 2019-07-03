@@ -1,4 +1,14 @@
 .side {
-  grid-column:  2 / 3;
-  grid-row: 1 / 7 ;
+  display: none;
+  @include responsive(tablet-land){
+    display: block;
+    grid-column:  2 / 3;
+    grid-row: 1 / 7 ;
+  };
+
+  &--alt {
+    @include responsive(tablet-land){
+      display: none;
+    };    
+  }
 }

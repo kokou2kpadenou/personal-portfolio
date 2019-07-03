@@ -1,15 +1,23 @@
 .page {
   max-width: 960px;
 
-  margin: 16rem auto 3rem auto;
+  margin: 14rem auto 3rem auto;
   background-color: var(--color-secondary);
   box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
+  @include responsive(tablet-land) {
+
+    margin: 16rem auto 3rem auto;
+  };
 
   &__content {
-    padding: 10rem;
-    display: grid;
-    grid-template-columns: 1fr 190px;
-    grid-gap: 30px;
+    padding: 4rem;
+
+    @include responsive(tablet-land){
+      display: grid;
+      grid-template-columns: 1fr 190px;
+      grid-gap: 30px;
+      padding: 10rem;
+    };
   }
 
 }

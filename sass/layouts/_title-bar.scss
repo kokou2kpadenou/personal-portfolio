@@ -1,9 +1,14 @@
 .title-bar {
   display: grid;
   grid-template-columns: 4rem 1fr 4rem;
-  grid-gap: 1rem;
+  grid-gap: .5rem;
   align-items: center;
   max-height: 500rem;
+  color: var(--color-title);
+
+  @include responsive(tablet-port) {
+    grid-gap: 1rem;
+  };
 
   &__checkbox {
     display: none;
@@ -12,19 +17,32 @@
       transition: max-height 1s ease-out;
     }
 
-    &:checked ~ .title-bar .expand  {
-      display: none;
-    }
-    &:checked ~ .title-bar .contract  {
-      display: block;
-    }
-    &:not(:checked) ~ .title-bar .expand  {
-      display: block;
-    }
-    &:not(:checked) ~ .title-bar .contract  {
-      display: none;
+    &:checked ~ .title-bar {
+      color: #888;
+      .expand {
+        display: block;
+      }
+
+      .contract {
+        display: none;
+      }
     }
 
+    &:not(:checked) ~ .title-bar  {
+      .expand {
+        display: none;
+      }
+
+      .contract {
+        display: block;
+      }
+    }
+
+    @include responsive(tablet-land) {
+      &:checked ~ .title-bar__content {
+        max-height: 500rem;
+      }
+    };
   }
 
   &__title {
@@ -34,14 +52,27 @@
 
   &__icon {
     grid-column: 1 / 2;
-    width: 4rem;
-    height: 4rem;
-    fill: var(--color-title);
+    width: 3rem;
+    height: 3rem;
+    fill: currentcolor;
+    @include responsive(tablet-port) {
+      width: 4rem;
+      height: 4rem;
+    };
+  }
+
+  &__icon-ex {
+    width: 3rem;
+    height: 3rem;
+    fill: currentcolor;
   }
 
   &__expand {
     grid-column: 3 / 4;
-
+    justify-self: center;
+    @include responsive(tablet-land) {
+      display: none;
+    };
   }
 
   &__content {

@@ -57,150 +57,253 @@
         </div>
         <div class="page__section side">
           <div class="side__part">
-            <!-- <h2 class="title title--2 title--2-h">Details</h2> -->
-            <h2 class="title title--2 title--2-h">
-              <svg class="title__icon">
+            <input class="title-bar__checkbox" type="checkbox" id="side-details">
+
+            <div class="title-bar">
+              <svg class="title-bar__icon">
                 <use xlink:href="#icon-details" href="#icon-details"></use>
               </svg>
-              <span class="title__content">Details</span>
-            </h2>
-            <p>8309 Crooked Pine Ct</p>
-            <p>Gaithersburg, MD, 20877</p>
-            <p>240 408 6034</p>
-            <p>kokou2kpadenou@gmail.com</p>
-            <p>https://www.kpadenou.net</p>
+              <h2 class="title title--2 title--2-h title-bar__title">Details</h2>
+              <label for="side-details" class="title-bar__expand">
+                <svg class="title-bar__icon-ex">
+                  <use class="expand" xlink:href="#icon-expand" href="#icon-expand"></use>
+                  <use class="contract" xlink:href="#icon-contract" href="#icon-contract"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="title-bar__content">
+              <p>8309 Crooked Pine Ct</p>
+              <p>Gaithersburg, MD, 20877</p>
+              <p>240 408 6034</p>
+              <p>kokou2kpadenou@gmail.com</p>
+              <p>https://www.kpadenou.net</p>
+
+            </div>
           </div>
           <div class="side__part">
-            <!-- <h2 class="title title--2 title--2-h">Skills</h2> -->
-            <h2 class="title title--2 title--2-h">
-              <svg class="title__icon">
+            <input class="title-bar__checkbox" type="checkbox" id="side-skills">
+
+            <div class="title-bar">
+              <svg class="title-bar__icon">
                 <use xlink:href="#icon-skills" href="#icon-skills"></use>
               </svg>
-              <span class="title__content">Skills</span>
-            </h2>
-            <p>HTML, CSS, JavaScript</p>
-            <p>React, Redux, JQuery</p>
-            <p>Git, SASS, BEM</p>
-            <p>Clear communication</p>
-            <p>Organized</p>
-            <p>Problem-solving</p>
-            <p>Attention to details</p>
+              <h2 class="title title--2 title--2-h title-bar__title">Skills</h2>
+              <label for="side-skills" class="title-bar__expand">
+                <svg class="title-bar__icon-ex">
+                  <use class="expand" xlink:href="#icon-expand" href="#icon-expand"></use>
+                  <use class="contract" xlink:href="#icon-contract" href="#icon-contract"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="title-bar__content">
+              <p>HTML, CSS, JavaScript</p>
+              <p>React, Redux, JQuery</p>
+              <p>Git, SASS, BEM</p>
+              <p>Clear communication</p>
+              <p>Organized</p>
+              <p>Problem-solving</p>
+              <p>Attention to details</p>
+
+            </div>
           </div>
           <div class="side__part">
-            <!-- <h2 class="title title--2 title--2-h">Courses</h2> -->
-            <h2 class="title title--2 title--2-h">
-              <svg class="title__icon">
+            <input class="title-bar__checkbox" type="checkbox" id="side-courses">
+
+            <div class="title-bar">
+              <svg class="title-bar__icon">
                 <use xlink:href="#icon-certificate" href="#icon-certificate"></use>
               </svg>
-              <span class="title__content">Courses</span>
-            </h2>
-            <p>FreeCodeCamp</p>
-            <p>Udacity</p>
-            <p>Oracle</p>
+              <h2 class="title title--2 title--2-h title-bar__title">Courses</h2>
+              <label for="side-courses" class="title-bar__expand">
+                <svg class="title-bar__icon-ex">
+                  <use class="expand" xlink:href="#icon-expand" href="#icon-expand"></use>
+                  <use class="contract" xlink:href="#icon-contract" href="#icon-contract"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="title-bar__content">
+              <p>FreeCodeCamp</p>
+              <p>Udacity</p>
+              <p>Oracle</p>
+
+            </div>
           </div>
         </div>
-        <!-- Activate later  -->
-        <!-- <div class="page__section details">
-          <h2 class="title title--2 title--2-h">
-            <svg class="title__icon">
+        <!-- Visible on small screen - side alternatif  -->
+        <div class="page__section side--alt details">
+          <input class="title-bar__checkbox" type="checkbox" id="details">
+          <div class="title-bar">
+            <svg class="title-bar__icon">
               <use xlink:href="#icon-details" href="#icon-details"></use>
             </svg>
-            <span class="title__content">Details</span>
-          </h2>
-        </div> -->
+            <h2 class="title title--2 title--2-h title-bar__title">Details</h2>
+            <label for="details" class="title-bar__expand">
+              <svg class="title-bar__icon-ex">
+                <use class="expand" xlink:href="#icon-expand" href="#icon-expand"></use>
+                <use class="contract" xlink:href="#icon-contract" href="#icon-contract"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="title-bar__content">
+
+          </div>
+        </div>
         <div class="page__section profile">
-          <h2 class="title title--2 title--2-h">
-            <svg class="title__icon">
+          <input class="title-bar__checkbox" type="checkbox" id="profile">
+          <div class="title-bar">
+            <svg class="title-bar__icon">
               <use xlink:href="#icon-about" href="#icon-about"></use>
             </svg>
-            <span class="title__content">Profile</span>
-          </h2>
-          <p class="text">Experienced and trusted IT professional, specialized in Web Frontend Development with a solid background in coding, design and debugging seeking the position of Web Front-End Developer in your company. Proficient in HTML, CSS, JavaScript, plus modern libraries and frameworks.</p>
+            <h2 class="title title--2 title--2-h title-bar__title">Profile</h2>
+            <label for="profile" class="title-bar__expand">
+              <svg class="title-bar__icon-ex">
+                <use class="expand" xlink:href="#icon-expand" href="#icon-expand"></use>
+                <use class="contract" xlink:href="#icon-contract" href="#icon-contract"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="title-bar__content">
+            <p class="text">Experienced and trusted IT professional, specialized in Web Frontend Development with a solid background in coding, design and debugging seeking the position of Web Front-End Developer in your company. Proficient in HTML, CSS, JavaScript, plus modern libraries and frameworks.</p>
+          </div>
         </div>
-        <!-- Activate later  -->
-        <!-- <div class="page__section skills">
-          <h2 class="title title--2 title--2-h">
-            <svg class="title__icon">
+        <!-- Visible on small screen - side alternatif  -->
+        <div class="page__section side--alt skills">
+          <input class="title-bar__checkbox" type="checkbox" id="skills">
+
+          <div class="title-bar">
+            <svg class="title-bar__icon">
               <use xlink:href="#icon-skills" href="#icon-skills"></use>
             </svg>
-            <span class="title__content">Skills</span>
-          </h2>
-        </div> -->
+            <h2 class="title title--2 title--2-h title-bar__title">Skills</h2>
+            <label for="skills" class="title-bar__expand">
+              <svg class="title-bar__icon-ex">
+                <use class="expand" xlink:href="#icon-expand" href="#icon-expand"></use>
+                <use class="contract" xlink:href="#icon-contract" href="#icon-contract"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="title-bar__content">
+
+          </div>
+        </div>
         <div class="page__section projects">
-          <h2 class="title title--2 title--2-h">
-            <svg class="title__icon">
+          <input class="title-bar__checkbox" type="checkbox" id="projects">
+
+          <div class="title-bar">
+            <svg class="title-bar__icon">
               <use xlink:href="#icon-projects" href="#icon-projects"></use>
             </svg>
-            <span class="title__content">Projects</span>
-          </h2>
-          <p class="text">Below are some of my favorite works. For more details and code source, you can visit my website www.kpadenou.net.</p>
-          <h3>Middlebrook Pediatrics</h3>
-          <p class="text">This was a personal initiative to modernize Middlebrook Pediatrics’s website. Middlebrook Pediatrics is a local company in the Health industry. The result product is a modern website with all attributes (responsive, a11y, ... ) which can give the company more marketable value.</p>
-          <h3>Fylo landing page</h3>
-          <p class="text">Fylo landing page is a Front-End challenge from Frontend Mentor. They provide design, starter code, project brief and a front-end style guide as in real life. Additionally login dialog and multi-themes (light and dark) functionalities were added to the project.</p>
+            <h2 class="title title--2 title--2-h title-bar__title">Projects</h2>
+            <label for="projects" class="title-bar__expand">
+              <svg class="title-bar__icon-ex">
+                <use class="expand" xlink:href="#icon-expand" href="#icon-expand"></use>
+                <use class="contract" xlink:href="#icon-contract" href="#icon-contract"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="title-bar__content">
+            <p class="text">Below are some of my favorite works. For more details and code source, you can visit my website www.kpadenou.net.</p>
+            <h3>Middlebrook Pediatrics</h3>
+            <p class="text">This was a personal initiative to modernize Middlebrook Pediatrics’s website. Middlebrook Pediatrics is a local company in the Health industry. The result product is a modern website with all attributes (responsive, a11y, ... ) which can give the company more marketable value.</p>
+            <h3>Fylo landing page</h3>
+            <p class="text">Fylo landing page is a Front-End challenge from Frontend Mentor. They provide design, starter code, project brief and a front-end style guide as in real life. Additionally login dialog and multi-themes (light and dark) functionalities were added to the project.</p>
+
+          </div>
         </div>
         <div class="page__section history">
-          <h2 class="title title--2 title--2-h">
-            <svg class="title__icon">
+          <input class="title-bar__checkbox" type="checkbox" id="history">
+
+          <div class="title-bar">
+            <svg class="title-bar__icon">
               <use xlink:href="#icon-history" href="#icon-history"></use>
             </svg>
-            <span class="title__content">Employment History</span>
-          </h2>
-          <div class="col">
-            <div class="col--1">
-              <p>Mar 2004 - Dec 2012</p>
-              <p>Lome - Togo</p>
+            <h2 class="title title--2 title--2-h title-bar__title">Experience</h2>
+            <label for="history" class="title-bar__expand">
+              <svg class="title-bar__icon-ex">
+                <use class="expand" xlink:href="#icon-expand" href="#icon-expand"></use>
+                <use class="contract" xlink:href="#icon-contract" href="#icon-contract"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="title-bar__content">
+            <div class="col">
+              <div class="col--1">
+                <p>Mar 2004 - Dec 2012</p>
+                <p>Lome - Togo</p>
+              </div>
+              <div class="col--2">
+                <h3>Application support officer, eProcess International, SA</h3>
+                <p>eProcess Int, SA, Ecobank's IT subsidiary,  is an IT Service Management System Supporting the Provision of IT services to Ecobank Affiliates exclusively. Ecabank is a pan-african financial institution in 33 africa countries.</p>
+                <ul class="">
+                  <li class="">Oversee the implementation and migration of the Internet Banking System (FlexCube Direct Banking 5.3) which serves approximately 150,000 customers based on Oracle database, APACHE and WebLogic.</li>
+                  <li class="">Responsible for backing up, archive and update the Online Banking System.</li>
+                  <li class="">Access and administer issues regarding public keys and patches as needed. Configure and administer hundreds of ATM on Nomad Cortex platform.</li>
+                </ul>
+              </div>
+
             </div>
-            <div class="col--2">
-              <h3>Application support officer, eProcess International, SA</h3>
-              <p>eProcess Int, SA, Ecobank's IT subsidiary,  is an IT Service Management System Supporting the Provision of IT services to Ecobank Affiliates exclusively. Ecabank is a pan-african financial institution in 33 africa countries.</p>
-              <ul class="">
-                <li class="">Oversee the implementation and migration of the Internet Banking System (FlexCube Direct Banking 5.3) which serves approximately 150,000 customers based on Oracle database, APACHE and WebLogic.</li>
-                <li class="">Responsible for backing up, archive and update the Online Banking System.</li>
-                <li class="">Access and administer issues regarding public keys and patches as needed. Configure and administer hundreds of ATM on Nomad Cortex platform.
-  </li>
-              </ul>
+            <div class="col">
+              <div class="col--1">
+                <p>Jun 2002 - Feb 2003</p>
+                <p>Lome - Togo</p>
+              </div>
+              <div class="col--2">
+                <h3>Oracle Developer, Africom-Togo</h3>
+                <p>Africom-Togo was the official Oracle partner in TOGO. the company was responsible for marketing, selling and supporting Oracle products.</p>
+              </div>
             </div>
 
           </div>
-          <div class="col">
-            <div class="col--1">
-              <p>Jun 2002 - Feb 2003</p>
-              <p>Lome - Togo</p>
-            </div>
-            <div class="col--2">
-              <h3>Oracle Developer, Africom-Togo</h3>
-              <p>Africom-Togo was the official Oracle partner in TOGO. the company was responsible for marketing, selling and supporting Oracle products.</p>
-            </div>
-          </div>
         </div>
         <div class="page__section education">
-          <h2 class="title title--2 title--2-h">
-            <svg class="title__icon">
+          <input class="title-bar__checkbox" type="checkbox" id="education">
+
+          <div class="title-bar">
+            <svg class="title-bar__icon">
               <use xlink:href="#icon-education" href="#icon-education"></use>
             </svg>
-            <span class="title__content">Education</span>
-          </h2>
-          <div class="col">
-            <div class="col--1">
-              <p>2000</p>
-              <p>Lome - Togo</p>
+            <h2 class="title title--2 title--2-h title-bar__title">Education</h2>
+            <label for="education" class="title-bar__expand">
+              <svg class="title-bar__icon-ex">
+                <use class="expand" xlink:href="#icon-expand" href="#icon-expand"></use>
+                <use class="contract" xlink:href="#icon-contract" href="#icon-contract"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="title-bar__content">
+            <div class="col">
+              <div class="col--1">
+                <p>2000</p>
+                <p>Lome - Togo</p>
+              </div>
+              <div class="col--2">
+                <h3>University of Lome</h3>
+                <p>Bachelor’s of Science - Information Technology</p>
+              </div>
             </div>
-            <div class="col--2">
-              <h3>University of Lome</h3>
-              <p>Bachelor’s of Science - Information Technology</p>
-            </div>
+
           </div>
         </div>
-        <!-- Activate later  -->
-        <!-- <div class="page__section courses">
-          <h2 class="title title--2 title--2-h">
-            <svg class="title__icon">
+        <!-- Visible on small screen - side alternatif  -->
+        <div class="page__section side--alt courses">
+          <input class="title-bar__checkbox" type="checkbox" id="courses">
+
+          <div class="title-bar">
+            <svg class="title-bar__icon">
               <use xlink:href="#icon-certificate" href="#icon-certificate"></use>
             </svg>
-            <span class="title__content">Courses</span>
-          </h2>
-        </div> -->
+            <h2 class="title title--2 title--2-h title-bar__title">Courses</h2>
+            <label for="courses" class="title-bar__expand">
+              <svg class="title-bar__icon-ex">
+                <use class="expand" xlink:href="#icon-expand" href="#icon-expand"></use>
+                <use class="contract" xlink:href="#icon-contract" href="#icon-contract"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="title-bar__content">
+
+          </div>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -231,6 +334,12 @@
         <!-- <symbol id="icon-" viewBox="0 0 32 32">
 
         </symbol> -->
+        <symbol id="icon-contract" viewBox="0 0 512 512">
+          <path d="M256 217.9L383 345a23.9 23.9 0 0 0 33.9 0 24.1 24.1 0 0 0 0-34L273 167a24 24 0 0 0-33.1-.7L95 310.9a24 24 0 0 0 33.9 34l127.1-127z"/>
+        </symbol>
+        <symbol id="icon-expand" viewBox="0 0 512 512">
+          <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345a24 24 0 0 1-33.1.7L95 201.1a24 24 0 0 1 33.9-34l127.1 127z"/>
+        </symbol>
         <symbol id="icon-details" viewBox="0 0 32 32">
           <path d="M13 5V4c0-1.1.9-2 2-2h1a2 2 0 0 1 2 2v1h2c.6 0 1 .4 1 1v1c0 .6-.4 1-1 1h-9a1 1 0 0 1-1-1V6c0-.6.4-1 1-1h2zm9 1h1a2 2 0 0 1 2 2v21a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h1v1c0 1.1.9 2 2 2h9a2 2 0 0 0 2-2V6zm-6.5-1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zM9 13v1h13v-1H9zm0 3v1h13v-1H9zm0 3v1h13v-1H9zm0 3v1h13v-1H9zm0 3v1h13v-1H9z"/>
         </symbol>
