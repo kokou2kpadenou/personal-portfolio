@@ -1,10 +1,12 @@
 .col {
   display: flex;
   flex-wrap: nowrap;
-
+  margin-bottom: 2rem;
 
   &--1 {
     width: 25rem;
+    // flex-grow: 1;
+    flex-shrink: 0;
   }
 
   &--2 {

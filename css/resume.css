@@ -104,9 +104,11 @@ body {
 
 .col {
   display: flex;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  margin-bottom: 2rem; }
   .col--1 {
-    width: 25rem; }
+    width: 25rem;
+    flex-shrink: 0; }
 
 .doc {
   padding: 0 20px; }
