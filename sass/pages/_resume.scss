@@ -1,3 +1,29 @@
+.doc {
+  padding: 0 20px;
+}
+
+
+.header {
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  transform: translateX(-50%);
+  width: 80vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+html {
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%202%202%22%3E%3Cpath%20d%3D%22M1%202V0h1v1H0v1z%22%20fill-opacity%3D%22.05%22%2F%3E%3C%2Fsvg%3E");
+  background-size: 16px 16px;
+}
+
+
 @import "resume/sections/intro";
 @import "resume/sections/side";
 @import "resume/sections/profile";
@@ -5,3 +31,15 @@
 @import "resume/sections/history";
 @import "resume/sections/education";
 @import "resume/sections/courses";
+
+.footer {
+  text-align: center;
+  margin: 50px auto 15px auto;
+  &__logo {
+    width: 6rem;
+    height: 6rem;
+  }
+  &__copy {
+    margin-top: 1.2rem;
+  }
+}

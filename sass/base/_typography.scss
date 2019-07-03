@@ -6,7 +6,7 @@ body {
 
 .title {
   font-family: 'Merienda', cursive;
-  color: var(--color-tilte);
+  color: var(--color-title);
   &--1 {
     font-size: 8vw;
     @include responsive(tablet-port) {
@@ -31,7 +31,7 @@ body {
     &::after {
       content: "";
       display: block;
-      background-color: var(--color-tilte);
+      background-color: var(--color-title);
       height: 4px;
       width: 6rem;
       margin: 1rem auto 3rem auto;
@@ -44,7 +44,7 @@ body {
 }
 
 .sub-title {
-  color: var(--color-tilte);
+  color: var(--color-title);
   font-size: 4.5vw;
   @include responsive(tablet-port) {
     font-size: 3.5rem;
@@ -58,6 +58,6 @@ body {
 .blockquote {
   color: #f66;
   text-align: center;
-  // color: var(--color-tilte);
+  // color: var(--color-title);
   font-size: 1.6rem;
 }

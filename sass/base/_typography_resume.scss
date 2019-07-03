@@ -1,0 +1,43 @@
+body {
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.title {
+  color: var(--color-title);
+  font-weight: 400;
+
+  &--1 {
+    font-size: 4rem;
+  }
+
+  &--2 {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &--2-h {
+    line-height: 7rem;
+  }
+
+
+  &--3 {
+    font-size: 2.7rem;
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    fill: currentcolor;
+  }
+
+  &__content {
+    margin-left: .8rem;
+  }
+
+}
+
+.text {
+  line-height: 1.5;
+}

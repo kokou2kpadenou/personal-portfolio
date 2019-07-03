@@ -9,7 +9,7 @@
   --color-primary: #3f3f3f;
   --color-secondary: #fff;
   --color-tertiary: #f9f9f9;
-  --color-tilte: #1083ae; }
+  --color-title: #1083ae; }
 
 html {
   font-size: 43.75%; }
@@ -22,50 +22,158 @@ body {
 
 body {
   font-size: 2rem;
-  font-family: 'Roboto', sans-serif;
-  color: var(--color-primary); }
+  font-family: 'Lato', sans-serif; }
 
 .title {
-  font-family: 'Merienda', cursive;
-  color: var(--color-tilte); }
+  color: var(--color-title);
+  font-weight: 400; }
   .title--1 {
-    font-size: 8vw; }
-    @media only screen and (min-width: 37.5em) {
-      .title--1 {
-        font-size: 7.5rem; } }
-  .title--1-bis {
-    font-size: 5vw;
-    text-align: center; }
-    @media only screen and (min-width: 37.5em) {
-      .title--1-bis {
-        font-size: 4rem; } }
+    font-size: 4rem; }
   .title--2 {
-    position: relative;
-    font-size: 6vw; }
-    @media only screen and (min-width: 37.5em) {
-      .title--2 {
-        font-size: 6rem; } }
-    .title--2::after {
-      content: "";
-      display: block;
-      background-color: var(--color-tilte);
-      height: 4px;
-      width: 6rem;
-      margin: 1rem auto 3rem auto; }
+    font-size: 3rem;
+    display: flex;
+    align-items: center; }
+  .title--2-h {
+    line-height: 7rem; }
   .title--3 {
     font-size: 2.7rem; }
-
-.sub-title {
-  color: var(--color-tilte);
-  font-size: 4.5vw; }
-  @media only screen and (min-width: 37.5em) {
-    .sub-title {
-      font-size: 3.5rem; } }
+  .title__icon {
+    width: 4rem;
+    height: 4rem;
+    fill: currentcolor; }
+  .title__content {
+    margin-left: .8rem; }
 
 .text {
-  line-height: 3.2rem; }
+  line-height: 1.5; }
 
-.blockquote {
-  color: #f66;
+.buttons {
+  list-style: none;
+  display: flex;
+  align-items: center; }
+  .buttons__elt {
+    /* display: inline-block; */ }
+  .buttons__link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 100%;
+    background-color: var(--color-secondary);
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
+    width: 35px;
+    height: 35px;
+    transition: transform .5s; }
+  .buttons__link--big {
+    width: 45px;
+    height: 45px; }
+  .buttons__link:link, .buttons__link:visited {
+    color: var(--color-title); }
+  .buttons__link--big:link, .buttons__link--big:visited {
+    color: var(--color-secondary);
+    background-color: #f66; }
+  .buttons__link:hover, .buttons__link:active {
+    transform: scale(1.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); }
+  .buttons__icon {
+    width: 25px;
+    height: 25px;
+    fill: currentcolor; }
+  .buttons__link--big .buttons__icon {
+    width: 30px;
+    height: 30px;
+    fill: currentcolor; }
+
+.picture {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 3px solid var(--color-title); }
+
+.page {
+  max-width: 960px;
+  margin: 16rem auto 3rem auto;
+  background-color: var(--color-secondary);
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3); }
+  .page__content {
+    padding: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 190px;
+    grid-gap: 30px; }
+
+.col {
+  display: flex;
+  flex-wrap: nowrap; }
+  .col--1 {
+    width: 25rem; }
+
+.doc {
+  padding: 0 20px; }
+
+.header {
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  transform: translateX(-50%);
+  width: 80vw; }
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+html {
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%202%202%22%3E%3Cpath%20d%3D%22M1%202V0h1v1H0v1z%22%20fill-opacity%3D%22.05%22%2F%3E%3C%2Fsvg%3E");
+  background-size: 16px 16px; }
+
+.intro {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-column-gap: 20px; }
+  .intro__pic {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2; }
+  .intro__name {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center; }
+  .intro__conctact {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; }
+
+.side {
+  grid-column: 2 / 3;
+  grid-row: 1 / 7; }
+
+.profile {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3; }
+
+.projects {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4; }
+
+.history {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5; }
+
+.education {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6; }
+
+.courses {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7; }
+
+.footer {
   text-align: center;
-  font-size: 1.6rem; }
+  margin: 50px auto 15px auto; }
+  .footer__logo {
+    width: 6rem;
+    height: 6rem; }
+  .footer__copy {
+    margin-top: 1.2rem; }

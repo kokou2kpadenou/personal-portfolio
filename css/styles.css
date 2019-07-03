@@ -9,7 +9,7 @@
   --color-primary: #3f3f3f;
   --color-secondary: #fff;
   --color-tertiary: #f9f9f9;
-  --color-tilte: #1083ae; }
+  --color-title: #1083ae; }
 
 html {
   font-size: 43.75%; }
@@ -27,7 +27,7 @@ body {
 
 .title {
   font-family: 'Merienda', cursive;
-  color: var(--color-tilte); }
+  color: var(--color-title); }
   .title--1 {
     font-size: 8vw; }
     @media only screen and (min-width: 37.5em) {
@@ -48,7 +48,7 @@ body {
     .title--2::after {
       content: "";
       display: block;
-      background-color: var(--color-tilte);
+      background-color: var(--color-title);
       height: 4px;
       width: 6rem;
       margin: 1rem auto 3rem auto; }
@@ -56,7 +56,7 @@ body {
     font-size: 2.7rem; }
 
 .sub-title {
-  color: var(--color-tilte);
+  color: var(--color-title);
   font-size: 4.5vw; }
   @media only screen and (min-width: 37.5em) {
     .sub-title {
@@ -112,7 +112,7 @@ body {
     fill: currentcolor; }
 
 .link:link, .link:visited {
-  color: var(--color-tilte);
+  color: var(--color-title);
   text-decoration: none; }
 
 .link:hover, .link:active {
@@ -154,13 +154,13 @@ body {
     .btn--menu .btn__label {
       font-size: 3rem; }
   .btn:link, .btn:visited {
-    color: var(--color-tilte); }
+    color: var(--color-title); }
   .btn:hover {
     border-color: rgba(0, 0, 0, 0.1);
     transform: translateY(-3px);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
     color: var(--color-secondary);
-    background-color: var(--color-tilte); }
+    background-color: var(--color-title); }
   .btn:active {
     transform: translateY(-1px);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); }
@@ -310,7 +310,7 @@ body {
   .section:nth-of-type(2n+1) {
     background-color: var(--color-tertiary); }
   .section:first-child {
-    border-bottom: 0.5px solid var(--color-tilte); }
+    border-bottom: 0.5px solid var(--color-title); }
   .section__content {
     max-width: 140rem;
     margin: 0 auto; }
@@ -340,7 +340,7 @@ body {
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 4rem;
     height: 2px;
-    background-color: var(--color-tilte);
+    background-color: var(--color-title);
     display: inline-block;
     transition: all .4s; }
   .navigation__icon::before, .navigation__icon::after {
@@ -356,13 +356,13 @@ body {
   transform: translateY(-3px);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
   border-color: rgba(0, 0, 0, 0.1);
-  background-color: var(--color-tilte); }
+  background-color: var(--color-title); }
 
 .navigation__button:active {
   transform: translateY(-1px);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
   border-color: rgba(0, 0, 0, 0.1);
-  background-color: var(--color-tilte); }
+  background-color: var(--color-title); }
 
 .navigation__button:hover .navigation__icon {
   background-color: var(--color-secondary); }

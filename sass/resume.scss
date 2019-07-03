@@ -4,13 +4,16 @@
 
 @import "base/animations";
 @import "base/base";
-@import "base/typography";
+@import "base/typography_resume";
 
 
+@import "components/buttons";
+@import "components/photo";
 // @import "components/link";
 
 @import "layouts/resume_page";
 @import "layouts/resume_section";
+@import "layouts/resume_details_column";
 
 
 @import "pages/resume";
