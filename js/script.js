@@ -5,6 +5,24 @@ var skillScreenDesc = document.querySelector('.skill__screen-desc');
 var navigationCheckbox = document.querySelector('.navigation__checkbox');
 var menuElement = document.getElementsByClassName('navigation__menu__elt');
 var headerName = document.querySelector('.header-name');
+var targetTitle = document.getElementById('top-title');
+var options = {
+  rootMargin: '-100px 0px 0px 0px',
+}
+
+var observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      // Header without name
+      if (headerName.classList.contains('show')) {
+        headerName.classList.remove('show');
+      }
+    } else {
+      // Name visible in the header
+      headerName.classList.add('show');
+    }
+  })
+}, options);
 
 
 var swiper = new Swiper('.swiper-container', {
@@ -53,14 +71,4 @@ for (var i = 0; i < menuElement.length; i++) {
   menuElement[i].addEventListener('click', menuElementClickHandle);
 }
 
-window.addEventListener('scroll', function(e) {
-  if ((document.body.scrollTop > 130) || (document.documentElement.scrollTop > 130)) {
-    // Name visible in the header
-    headerName.classList.add('show');
-  } else {
-    // Header without name
-    if (headerName.classList.contains('show')) {
-      headerName.classList.remove('show');
-    }
-  }
-});
+observer.observe(targetTitle);
