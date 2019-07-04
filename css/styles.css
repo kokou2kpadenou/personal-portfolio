@@ -144,13 +144,13 @@ body {
       vertical-align: middle; }
   .btn--menu {
     display: block;
-    width: 17.5rem;
+    width: 19rem;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 5px;
     border-color: transparent; }
     .btn--menu .btn__icon {
-      width: 10rem;
-      height: 10rem; }
+      width: 8rem;
+      height: 8rem; }
     .btn--menu .btn__label {
       font-size: 3rem; }
   .btn:link, .btn:visited {
