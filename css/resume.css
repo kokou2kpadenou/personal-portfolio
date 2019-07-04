@@ -51,6 +51,10 @@ body {
 .text {
   line-height: 1.5; }
 
+.text-mediun {
+  font-size: 2.2rem;
+  line-height: 2.5; }
+
 .buttons {
   list-style: none;
   display: flex;
@@ -89,6 +93,13 @@ body {
     height: 30px;
     fill: currentcolor; }
 
+.link:link, .link:visited {
+  color: #f66;
+  text-decoration: none; }
+
+.link:hover, .link:active {
+  color: var(--color-title); }
+
 .picture {
   width: 70px;
   height: 70px;
@@ -100,6 +111,9 @@ body {
   height: 2rem;
   vertical-align: text-bottom;
   fill: currentcolor; }
+  .symbol--m {
+    width: 2.5rem;
+    height: 2.5rem; }
 
 .page {
   max-width: 960px;
@@ -114,7 +128,7 @@ body {
     @media only screen and (min-width: 56.25em) {
       .page__content {
         display: grid;
-        grid-template-columns: 1fr 190px;
+        grid-template-columns: 1fr 220px;
         grid-gap: 30px;
         padding: 10rem; } }
 
@@ -238,6 +252,8 @@ html {
       display: block;
       grid-column: 2 / 3;
       grid-row: 1 / 7; } }
+  .side__part:not(:first-of-type) {
+    margin-top: 4rem; }
   @media only screen and (min-width: 56.25em) {
     .side--alt {
       display: none; } }

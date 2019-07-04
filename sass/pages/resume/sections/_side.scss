@@ -6,9 +6,15 @@
     grid-row: 1 / 7 ;
   };
 
+  &__part {
+    &:not(:first-of-type) {
+      margin-top: 4rem;
+    }
+  }
+
   &--alt {
     @include responsive(tablet-land){
       display: none;
-    };    
+    };
   }
 }

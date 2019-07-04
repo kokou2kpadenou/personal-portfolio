@@ -112,11 +112,11 @@ body {
     fill: currentcolor; }
 
 .link:link, .link:visited {
-  color: var(--color-title);
+  color: #f66;
   text-decoration: none; }
 
 .link:hover, .link:active {
-  color: #f66; }
+  color: var(--color-title); }
 
 .btn {
   text-decoration: none;

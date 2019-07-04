@@ -1,12 +1,12 @@
 .link {
   &:link,
   &:visited {
-    color: var(--color-title);
+    color: #f66;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: #f66;
+    color: var(--color-title);
     // color: var(--color-hover);
   }
 }
