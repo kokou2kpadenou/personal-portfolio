@@ -1,5 +1,8 @@
 .intro {
   text-align: center;
+  &__conctact {
+    padding: 1rem 0;
+  }
   @include responsive(tablet-land){
     text-align: left;
     grid-column:  1 / 2;
@@ -20,6 +23,7 @@
     }
 
     &__conctact {
+      padding: .2rem 0;
       grid-column: 2 / 3;
       grid-row: 2 / 3;
     }

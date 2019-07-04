@@ -95,6 +95,12 @@ body {
   border-radius: 100%;
   border: 3px solid var(--color-title); }
 
+.symbol {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  fill: currentcolor; }
+
 .page {
   max-width: 960px;
   margin: 14rem auto 3rem auto;
@@ -203,6 +209,8 @@ html {
 
 .intro {
   text-align: center; }
+  .intro__conctact {
+    padding: 1rem 0; }
   @media only screen and (min-width: 56.25em) {
     .intro {
       text-align: left;
@@ -219,6 +227,7 @@ html {
         grid-row: 1 / 2;
         align-self: center; }
       .intro__conctact {
+        padding: .2rem 0;
         grid-column: 2 / 3;
         grid-row: 2 / 3; } }
 
