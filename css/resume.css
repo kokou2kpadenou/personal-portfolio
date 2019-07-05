@@ -23,7 +23,7 @@ body {
 body {
   font-size: 1.7rem;
   font-family: 'Lato', sans-serif; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     body {
       font-size: 2rem; } }
 
@@ -33,12 +33,12 @@ body {
     color: var(--color-title); }
   .title--1 {
     font-size: 3rem; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 37.5em), only print {
       .title--1 {
         font-size: 4rem; } }
   .title--2 {
     font-size: 2.3rem; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 37.5em), only print {
       .title--2 {
         font-size: 3rem; } }
   .title--2-h {
@@ -54,7 +54,7 @@ body {
 .text-mediun {
   font-size: 1.8rem;
   line-height: 1.7; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     .text-mediun {
       font-size: 2.2rem;
       line-height: 2.5; } }
@@ -136,12 +136,16 @@ body {
   margin: 14rem auto 3rem auto;
   background-color: var(--color-secondary);
   box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3); }
-  @media only screen and (min-width: 56.25em) {
+  @media only screen and (min-width: 56.25em), only print {
     .page {
       margin: 16rem auto 3rem auto; } }
+  @media only print {
+    .page {
+      margin: 0;
+      box-shadow: none; } }
   .page__content {
     padding: 4rem; }
-    @media only screen and (min-width: 56.25em) {
+    @media only screen and (min-width: 56.25em), only print {
       .page__content {
         display: grid;
         grid-template-columns: 1fr 220px;
@@ -149,23 +153,23 @@ body {
         padding: 10rem; } }
   .page__section {
     margin-bottom: 15px; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 37.5em), only print {
       .page__section {
         margin-bottom: 25px; } }
-    @media only screen and (min-width: 56.25em) {
+    @media only screen and (min-width: 56.25em), only print {
       .page__section {
         margin: 0; } }
 
 .col:not(:last-of-type) {
   margin-bottom: 2rem; }
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 37.5em), only print {
   .col {
     display: flex;
     flex-wrap: nowrap; } }
 
 .col--1 {
-  width: 25rem;
+  width: 22rem;
   flex-shrink: 0; }
 
 .title-bar {
@@ -174,7 +178,7 @@ body {
   grid-gap: .5rem;
   align-items: center;
   color: var(--color-title); }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     .title-bar {
       grid-gap: 1rem; } }
   .title-bar__checkbox {
@@ -191,7 +195,7 @@ body {
       display: none; }
     .title-bar__checkbox:not(:checked) ~ .title-bar .contract {
       display: block; }
-    @media only screen and (min-width: 56.25em) {
+    @media only screen and (min-width: 56.25em), only print {
       .title-bar__checkbox:checked ~ .title-bar__content {
         height: auto; }
       .title-bar__checkbox:checked ~ .title-bar {
@@ -204,7 +208,7 @@ body {
     width: 3rem;
     height: 3rem;
     fill: currentcolor; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 37.5em), only print {
       .title-bar__icon {
         width: 4rem;
         height: 4rem; } }
@@ -215,7 +219,7 @@ body {
   .title-bar__expand {
     grid-column: 3 / 4;
     justify-self: center; }
-    @media only screen and (min-width: 56.25em) {
+    @media only screen and (min-width: 56.25em), only print {
       .title-bar__expand {
         display: none; } }
   .title-bar__content {
@@ -225,9 +229,16 @@ html {
   background-color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%202%202%22%3E%3Cpath%20d%3D%22M1%202V0h1v1H0v1z%22%20fill-opacity%3D%22.05%22%2F%3E%3C%2Fsvg%3E");
   background-size: 16px 16px; }
+  @media only print {
+    html {
+      background-color: none;
+      background-image: none; } }
 
 .doc {
   padding: 0 20px; }
+  @media only print {
+    .doc {
+      padding: 0; } }
 
 .header {
   position: absolute;
@@ -235,15 +246,18 @@ html {
   top: 15px;
   transform: translateX(-50%);
   width: 80vw; }
-  @media only screen and (min-width: 75em) {
+  @media only screen and (min-width: 75em), only print {
     .header {
       width: 138rem; } }
+  @media only print {
+    .header {
+      display: none; } }
 
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     .navbar {
       justify-content: flex-end; } }
 
@@ -251,7 +265,7 @@ html {
   text-align: center; }
   .intro__conctact {
     padding: 1rem 0; }
-  @media only screen and (min-width: 56.25em) {
+  @media only screen and (min-width: 56.25em), only print {
     .intro {
       text-align: left;
       grid-column: 1 / 2;
@@ -273,14 +287,14 @@ html {
 
 .side {
   display: none; }
-  @media only screen and (min-width: 56.25em) {
+  @media only screen and (min-width: 56.25em), only print {
     .side {
       display: block;
       grid-column: 2 / 3;
       grid-row: 1 / 7; } }
   .side__part:not(:first-of-type) {
     margin-top: 4rem; }
-  @media only screen and (min-width: 56.25em) {
+  @media only screen and (min-width: 56.25em), only print {
     .side--alt {
       display: none; } }
 
@@ -308,3 +322,6 @@ html {
     height: 6rem; }
   .footer__copy {
     margin-top: 1.2rem; }
+  @media only print {
+    .footer {
+      display: none; } }

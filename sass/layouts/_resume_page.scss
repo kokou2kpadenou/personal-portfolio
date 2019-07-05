@@ -5,8 +5,12 @@
   background-color: var(--color-secondary);
   box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
   @include responsive(tablet-land) {
-
     margin: 16rem auto 3rem auto;
+  };
+
+  @include responsive(printer) {
+    margin: 0;
+    box-shadow: none;
   };
 
   &__content {

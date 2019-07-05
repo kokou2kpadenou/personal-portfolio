@@ -30,19 +30,19 @@ body {
   color: var(--color-title); }
   .title--1 {
     font-size: 8vw; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 37.5em), only print {
       .title--1 {
         font-size: 7.5rem; } }
   .title--1-bis {
     font-size: 5vw;
     text-align: center; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 37.5em), only print {
       .title--1-bis {
         font-size: 4rem; } }
   .title--2 {
     position: relative;
     font-size: 6vw; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 37.5em), only print {
       .title--2 {
         font-size: 6rem; } }
     .title--2::after {
@@ -58,7 +58,7 @@ body {
 .sub-title {
   color: var(--color-title);
   font-size: 4.5vw; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     .sub-title {
       font-size: 3.5rem; } }
 
@@ -132,7 +132,7 @@ body {
     font-size: 2.5rem;
     border-radius: 5px;
     padding: 1.5rem 18vw; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 37.5em), only print {
       .btn--bg {
         padding: 1.5rem 16rem; } }
   .btn--sm {
@@ -180,7 +180,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     .swiper-slide {
       width: 27rem;
       height: 27rem; } }
@@ -229,7 +229,7 @@ body {
   fill: currentColor;
   --color-svg-stroke: rgba(0, 0, 0, .2);
   --color-svg-fill: #fff; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     .skill__icon {
       width: 10rem;
       height: 10rem; } }
@@ -251,12 +251,12 @@ body {
   list-style: none;
   display: grid;
   grid-gap: 6rem; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     .cert {
       grid-template-columns: repeat(2, 1fr); } }
   .cert__elt {
     justify-self: center; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 37.5em), only print {
       .cert__elt:nth-of-type(2n+1) {
         justify-self: end; }
       .cert__elt:nth-of-type(2n) {
@@ -280,7 +280,7 @@ body {
     transition: transform .5s; }
     .cert__link:hover, .cert__link:active {
       transform: scale(1.3); }
-      @media only screen and (min-width: 37.5em) {
+      @media only screen and (min-width: 37.5em), only print {
         .cert__link:hover, .cert__link:active {
           transform: scale(1.6); } }
 
@@ -423,7 +423,7 @@ body {
   list-style: none;
   display: grid;
   grid-gap: 6rem; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     .project {
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
       grid-auto-rows: 35rem; } }
@@ -458,7 +458,7 @@ body {
   width: 100%;
   min-height: 12rem;
   z-index: 10; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     .header {
       padding: 2rem 5rem; } }
 
@@ -478,31 +478,31 @@ body {
 
 .no-webp .intro {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro.jpg); }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     .no-webp .intro {
       background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro_600.jpg); } }
-  @media only screen and (min-width: 56.25em) {
+  @media only screen and (min-width: 56.25em), only print {
     .no-webp .intro {
       background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro_900.jpg); } }
-  @media only screen and (min-width: 75em) {
+  @media only screen and (min-width: 75em), only print {
     .no-webp .intro {
       background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro_1200.jpg); } }
-  @media only screen and (min-width: 93.75em) {
+  @media only screen and (min-width: 93.75em), only print {
     .no-webp .intro {
       background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/jpeg/intro_1400.jpg); } }
 
 .webp .intro {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro.webp); }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     .webp .intro {
       background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro_600.webp); } }
-  @media only screen and (min-width: 56.25em) {
+  @media only screen and (min-width: 56.25em), only print {
     .webp .intro {
       background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro_900.webp); } }
-  @media only screen and (min-width: 75em) {
+  @media only screen and (min-width: 75em), only print {
     .webp .intro {
       background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro_1200.webp); } }
-  @media only screen and (min-width: 93.75em) {
+  @media only screen and (min-width: 93.75em), only print {
     .webp .intro {
       background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/intro/webp/intro_1400.webp); } }
 
@@ -512,10 +512,10 @@ body {
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
   font-size: 1.7rem; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     .footer {
       padding: 5rem; } }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 37.5em), only print {
     .footer {
       display: flex;
       flex-direction: row-reverse;

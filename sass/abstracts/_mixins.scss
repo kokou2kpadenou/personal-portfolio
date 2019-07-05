@@ -2,25 +2,31 @@
 @mixin responsive($breakpoint) {
   // 600px and plus (600px / 16px = 37.5em) ==> tablet portrait
   @if $breakpoint == tablet-port {
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 37.5em), only print {
       @content
     };
   }
   // 900px and plus (900px / 16px = 56.25em) ==> tablet landscape
   @if $breakpoint == tablet-land {
-    @media only screen and (min-width: 56.25em) {
+    @media only screen and (min-width: 56.25em), only print {
       @content
     };
   }
   // 1200px and plus (1200px / 16px = 75em) ==> desktop
   @if $breakpoint == desktop {
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 75em), only print {
       @content
     };
   }
   // 1500px and plus (1500px / 16px = 93.75em) ==> big desktop
   @if $breakpoint == big-desktop {
-    @media only screen and (min-width: 93.75em) {
+    @media only screen and (min-width: 93.75em), only print {
+      @content
+    };
+  }
+  // 1500px and plus (1500px / 16px = 93.75em) ==> big desktop
+  @if $breakpoint == printer {
+    @media only print {
       @content
     };
   }
