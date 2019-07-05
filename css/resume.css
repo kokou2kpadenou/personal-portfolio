@@ -62,6 +62,9 @@ body {
 .center {
   text-align: center; }
 
+.bg-darkness {
+  background-color: rgba(0, 0, 0, 0.7); }
+
 .buttons {
   list-style: none;
   display: flex;
