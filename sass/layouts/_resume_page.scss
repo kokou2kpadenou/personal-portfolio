@@ -15,8 +15,18 @@
     @include responsive(tablet-land){
       display: grid;
       grid-template-columns: 1fr 220px;
-      grid-gap: 30px;
+      grid-gap: 25px 30px;
       padding: 10rem;
+    };
+  }
+
+  &__section {
+    margin-bottom: 15px;
+    @include responsive(tablet-port) {
+      margin-bottom: 25px;
+    };
+    @include responsive(tablet-land) {
+      margin: 0;
     };
   }
 

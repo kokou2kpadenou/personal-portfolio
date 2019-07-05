@@ -28,8 +28,9 @@ body {
       font-size: 2rem; } }
 
 .title {
-  color: var(--color-title);
   font-weight: 400; }
+  .title--1, .title--2 {
+    color: var(--color-title); }
   .title--1 {
     font-size: 3rem; }
     @media only screen and (min-width: 37.5em) {
@@ -43,17 +44,23 @@ body {
   .title--2-h {
     line-height: 7rem; }
   .title--3 {
-    font-size: 2rem; }
-    @media only screen and (min-width: 37.5em) {
-      .title--3 {
-        font-size: 2.7rem; } }
+    padding-bottom: 1.8rem; }
+  .title--3-f {
+    line-height: 5rem; }
 
 .text {
   line-height: 1.5; }
 
 .text-mediun {
-  font-size: 2.2rem;
-  line-height: 2.5; }
+  font-size: 1.8rem;
+  line-height: 1.7; }
+  @media only screen and (min-width: 37.5em) {
+    .text-mediun {
+      font-size: 2.2rem;
+      line-height: 2.5; } }
+
+.center {
+  text-align: center; }
 
 .buttons {
   list-style: none;
@@ -100,6 +107,12 @@ body {
 .link:hover, .link:active {
   color: var(--color-title); }
 
+.list--1 {
+  margin: 10px 0 0 15px; }
+
+.list--2 {
+  list-style-position: inside; }
+
 .picture {
   width: 70px;
   height: 70px;
@@ -129,14 +142,24 @@ body {
       .page__content {
         display: grid;
         grid-template-columns: 1fr 220px;
-        grid-gap: 30px;
+        grid-gap: 25px 30px;
         padding: 10rem; } }
+  .page__section {
+    margin-bottom: 15px; }
+    @media only screen and (min-width: 37.5em) {
+      .page__section {
+        margin-bottom: 25px; } }
+    @media only screen and (min-width: 56.25em) {
+      .page__section {
+        margin: 0; } }
+
+.col:not(:last-of-type) {
+  margin-bottom: 2rem; }
 
 @media only screen and (min-width: 37.5em) {
   .col {
     display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 2rem; } }
+    flex-wrap: nowrap; } }
 
 .col--1 {
   width: 25rem;
