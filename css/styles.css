@@ -118,6 +118,14 @@ body {
 .link:hover, .link:active {
   color: var(--color-title); }
 
+@media only print {
+  .link--print svg {
+    display: none; }
+  .link--print::after {
+    content: "(" attr(href) ")"; }
+  .link--print h3 {
+    display: inline-block; } }
+
 .btn {
   text-decoration: none;
   display: inline-block;

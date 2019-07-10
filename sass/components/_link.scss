@@ -9,4 +9,18 @@
     color: var(--color-title);
     // color: var(--color-hover);
   }
+
+  &--print {
+    @include responsive(printer) {
+      svg {
+        display: none;
+      }
+      &::after {
+        content: "(" attr(href) ")";
+      }
+      h3 {
+        display: inline-block;
+      }
+    };
+  }
 }

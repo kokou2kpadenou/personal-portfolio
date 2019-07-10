@@ -11,17 +11,26 @@
   @include responsive(printer) {
     margin: 0;
     box-shadow: none;
+    width: 612pt;
   };
 
   &__content {
     padding: 4rem;
 
-    @include responsive(tablet-land){
+    @include responsive(tablet-land) {
       display: grid;
       grid-template-columns: 1fr 220px;
       grid-gap: 25px 30px;
       padding: 10rem;
     };
+
+    @include responsive(printer) {
+      grid-template-columns: 1fr 150pt;
+      grid-gap: 5pt 30pt;
+      padding: 30pt 40pt;
+    };
+
+
   }
 
   &__section {

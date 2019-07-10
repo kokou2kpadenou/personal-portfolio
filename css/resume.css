@@ -26,6 +26,9 @@ body {
   @media only screen and (min-width: 37.5em), only print {
     body {
       font-size: 2rem; } }
+  @media only print {
+    body {
+      font-size: 9pt; } }
 
 .title {
   font-weight: 400; }
@@ -41,6 +44,9 @@ body {
     @media only screen and (min-width: 37.5em), only print {
       .title--2 {
         font-size: 3rem; } }
+    @media only print {
+      .title--2 {
+        font-size: 13pt; } }
   .title--2-h {
     line-height: 7rem; }
   .title--3 {
@@ -50,14 +56,23 @@ body {
 
 .text {
   line-height: 1.5; }
-
-.text-mediun {
-  font-size: 1.8rem;
-  line-height: 1.7; }
-  @media only screen and (min-width: 37.5em), only print {
-    .text-mediun {
-      font-size: 2.2rem;
-      line-height: 2.5; } }
+  @media only print {
+    .text {
+      line-height: 1.7; } }
+  .text-mediun {
+    font-size: 1.8rem;
+    line-height: 1.7; }
+    @media only screen and (min-width: 37.5em), only print {
+      .text-mediun {
+        font-size: 2.2rem;
+        line-height: 2.5; } }
+    @media only print {
+      .text-mediun {
+        font-size: 10pt;
+        line-height: 2.2; } }
+  .text--extra {
+    color: var(--color-title);
+    margin-bottom: 1rem; }
 
 .center {
   text-align: center; }
@@ -110,6 +125,14 @@ body {
 .link:hover, .link:active {
   color: var(--color-title); }
 
+@media only print {
+  .link--print svg {
+    display: none; }
+  .link--print::after {
+    content: "(" attr(href) ")"; }
+  .link--print h3 {
+    display: inline-block; } }
+
 .list--1 {
   margin: 10px 0 0 15px; }
 
@@ -142,7 +165,8 @@ body {
   @media only print {
     .page {
       margin: 0;
-      box-shadow: none; } }
+      box-shadow: none;
+      width: 612pt; } }
   .page__content {
     padding: 4rem; }
     @media only screen and (min-width: 56.25em), only print {
@@ -151,6 +175,11 @@ body {
         grid-template-columns: 1fr 220px;
         grid-gap: 25px 30px;
         padding: 10rem; } }
+    @media only print {
+      .page__content {
+        grid-template-columns: 1fr 150pt;
+        grid-gap: 5pt 30pt;
+        padding: 30pt 40pt; } }
   .page__section {
     margin-bottom: 15px; }
     @media only screen and (min-width: 37.5em), only print {
@@ -169,8 +198,11 @@ body {
     flex-wrap: nowrap; } }
 
 .col--1 {
-  width: 22rem;
+  width: 20rem;
   flex-shrink: 0; }
+  @media only print {
+    .col--1 {
+      width: 90pt; } }
 
 .title-bar {
   display: grid;
@@ -181,6 +213,9 @@ body {
   @media only screen and (min-width: 37.5em), only print {
     .title-bar {
       grid-gap: 1rem; } }
+  @media only print {
+    .title-bar {
+      grid-gap: 0; } }
   .title-bar__checkbox {
     display: none; }
     .title-bar__checkbox:checked ~ .title-bar__content {
@@ -212,6 +247,10 @@ body {
       .title-bar__icon {
         width: 4rem;
         height: 4rem; } }
+    @media only print {
+      .title-bar__icon {
+        width: 3rem;
+        height: 3rem; } }
   .title-bar__icon-ex {
     width: 3rem;
     height: 3rem;
@@ -224,6 +263,9 @@ body {
         display: none; } }
   .title-bar__content {
     overflow: hidden; }
+
+@page {
+  margin: 0pt; }
 
 html {
   background-color: transparent;
@@ -292,8 +334,13 @@ html {
       display: block;
       grid-column: 2 / 3;
       grid-row: 1 / 7; } }
+  .side address {
+    margin-bottom: 1rem; }
   .side__part:not(:first-of-type) {
     margin-top: 4rem; }
+    @media only print {
+      .side__part:not(:first-of-type) {
+        margin-top: 0pt; } }
   @media only screen and (min-width: 56.25em), only print {
     .side--alt {
       display: none; } }

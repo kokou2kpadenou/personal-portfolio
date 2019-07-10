@@ -3,6 +3,9 @@ body {
   @include responsive(tablet-port) {
     font-size: 2rem;
   };
+  @include responsive(printer) {
+    font-size: 9pt;
+  };
   font-family: 'Lato', sans-serif;
 }
 
@@ -25,10 +28,16 @@ body {
     @include responsive(tablet-port) {
       font-size: 3rem;
     };
+    @include responsive(printer) {
+      font-size: 13pt;
+    };
   }
 
   &--2-h {
     line-height: 7rem;
+    @include responsive(printer) {
+      // line-height: 5rem;
+    };
   }
 
 
@@ -47,14 +56,26 @@ body {
 
 .text {
   line-height: 1.5;
-}
-
-.text-mediun {
-  font-size: 1.8rem;
-  line-height: 1.7;
-  @include responsive(tablet-port) {
-    font-size: 2.2rem;
-    line-height: 2.5;
-
+  @include responsive(printer) {
+    line-height: 1.7;
   };
+
+  &-mediun {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    @include responsive(tablet-port) {
+      font-size: 2.2rem;
+      line-height: 2.5;
+    };
+    @include responsive(printer) {
+      font-size: 10pt;
+      line-height: 2.2;
+    };
+  }
+
+  &--extra {
+    color: var(--color-title);
+    margin-bottom: 1rem;
+  }
+
 }

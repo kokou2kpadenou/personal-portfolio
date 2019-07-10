@@ -9,6 +9,10 @@
     grid-gap: 1rem;
   };
 
+  @include responsive(printer) {
+    grid-gap: 0;
+  };
+
   &__checkbox {
     display: none;
     &:checked ~ .title-bar__content {
@@ -60,6 +64,10 @@
     @include responsive(tablet-port) {
       width: 4rem;
       height: 4rem;
+    };
+    @include responsive(printer) {
+      width: 3rem;
+      height: 3rem;
     };
   }
 

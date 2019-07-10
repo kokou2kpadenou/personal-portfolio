@@ -10,8 +10,11 @@
   };
 
   &--1 {
-    width: 22rem;
+    width: 20rem;
     flex-shrink: 0;
+    @include responsive(printer) {
+      width: 90pt;
+    };
   }
 
   &--2 {
