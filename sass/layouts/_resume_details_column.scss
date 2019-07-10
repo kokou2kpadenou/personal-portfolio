@@ -1,0 +1,23 @@
+.col {
+
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+  @include responsive(tablet-port) {
+    display: flex;
+    flex-wrap: nowrap;
+
+  };
+
+  &--1 {
+    width: 20rem;
+    flex-shrink: 0;
+    @include responsive(printer) {
+      width: 90pt;
+    };
+  }
+
+  &--2 {
+
+  }
+}

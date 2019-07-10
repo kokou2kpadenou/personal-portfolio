@@ -8,9 +8,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:sass": "node-sass ./sass/main.scss ./css/styles.css -w",
+    "watch:sass:main": "node-sass ./sass/main.scss ./css/styles.css -w",
+    "watch:sass:resume": "node-sass ./sass/resume.scss ./css/resume.css -w",
     "devhttp:server": "live-server --port=8000",
-    "start": "npm-run-all --parallel devhttp:server watch:sass",
+    "start": "npm-run-all --parallel devhttp:server watch:sass:main watch:sass:resume",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css build/css/styles.css --output-style compressed",

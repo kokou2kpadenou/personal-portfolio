@@ -1,0 +1,92 @@
+.title-bar {
+  display: grid;
+  grid-template-columns: 4rem 1fr 4rem;
+  grid-gap: .5rem;
+  align-items: center;
+  color: var(--color-title);
+
+  @include responsive(tablet-port) {
+    grid-gap: 1rem;
+  };
+
+  @include responsive(printer) {
+    grid-gap: 0;
+  };
+
+  &__checkbox {
+    display: none;
+    &:checked ~ .title-bar__content {
+      height: 0;
+    }
+
+    &:checked ~ .title-bar {
+      color: #888;
+
+      .expand {
+        display: block;
+      }
+
+      .contract {
+        display: none;
+      }
+    }
+
+    &:not(:checked) ~ .title-bar  {
+      .expand {
+        display: none;
+      }
+
+      .contract {
+        display: block;
+      }
+    }
+
+    @include responsive(tablet-land) {
+      &:checked ~ .title-bar__content {
+        height: auto;
+      }
+      &:checked ~ .title-bar {
+        color: var(--color-title);
+      }
+    };
+  }
+
+  &__title {
+    grid-column: 2 / 3;
+    color: inherit;
+  }
+
+  &__icon {
+    grid-column: 1 / 2;
+    width: 3rem;
+    height: 3rem;
+    fill: currentcolor;
+    @include responsive(tablet-port) {
+      width: 4rem;
+      height: 4rem;
+    };
+    @include responsive(printer) {
+      width: 3rem;
+      height: 3rem;
+    };
+  }
+
+  &__icon-ex {
+    width: 3rem;
+    height: 3rem;
+    fill: currentcolor;
+  }
+
+  &__expand {
+    grid-column: 3 / 4;
+    justify-self: center;
+    @include responsive(tablet-land) {
+      display: none;
+    };
+  }
+
+  &__content {
+    overflow: hidden;
+  }
+
+}
