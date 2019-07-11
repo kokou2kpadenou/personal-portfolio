@@ -1,0 +1,46 @@
+.page {
+  max-width: 960px;
+
+  margin: 14rem auto 3rem auto;
+  background-color: var(--color-secondary);
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
+  @include responsive(tablet-land) {
+    margin: 16rem auto 3rem auto;
+  };
+
+  @include responsive(printer) {
+    margin: 0;
+    box-shadow: none;
+    width: 612pt;
+  };
+
+  &__content {
+    padding: 4rem;
+
+    @include responsive(tablet-land) {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      grid-gap: 25px 30px;
+      padding: 10rem;
+    };
+
+    @include responsive(printer) {
+      grid-template-columns: 1fr 150pt;
+      grid-gap: 5pt 30pt;
+      padding: 30pt 40pt;
+    };
+
+
+  }
+
+  &__section {
+    margin-bottom: 15px;
+    @include responsive(tablet-port) {
+      margin-bottom: 25px;
+    };
+    @include responsive(tablet-land) {
+      margin: 0;
+    };
+  }
+
+}

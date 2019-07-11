@@ -1,12 +1,26 @@
 .link {
   &:link,
   &:visited {
-    color: var(--color-tilte);
+    color: #f66;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: #f66;
+    color: var(--color-title);
     // color: var(--color-hover);
+  }
+
+  &--print {
+    @include responsive(printer) {
+      svg {
+        display: none;
+      }
+      &::after {
+        content: "(" attr(href) ")";
+      }
+      h3 {
+        display: inline-block;
+      }
+    };
   }
 }

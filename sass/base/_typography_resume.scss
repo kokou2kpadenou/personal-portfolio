@@ -1,0 +1,81 @@
+body {
+  font-size: 1.7rem;
+  @include responsive(tablet-port) {
+    font-size: 2rem;
+  };
+  @include responsive(printer) {
+    font-size: 9pt;
+  };
+  font-family: 'Lato', sans-serif;
+}
+
+.title {
+  font-weight: 400;
+
+  &--1, &--2 {
+    color: var(--color-title);
+  }
+
+  &--1 {
+    font-size: 3rem;
+    @include responsive(tablet-port) {
+      font-size: 4rem;
+    };
+  }
+
+  &--2 {
+    font-size: 2.3rem;
+    @include responsive(tablet-port) {
+      font-size: 3rem;
+    };
+    @include responsive(printer) {
+      font-size: 13pt;
+    };
+  }
+
+  &--2-h {
+    line-height: 7rem;
+    @include responsive(printer) {
+      // line-height: 5rem;
+    };
+  }
+
+
+  &--3 {
+    padding-bottom: 1.8rem;
+
+  }
+
+  &--3-f {
+    line-height: 5rem;
+
+  }
+
+
+}
+
+.text {
+  line-height: 1.5;
+  @include responsive(printer) {
+    line-height: 1.7;
+  };
+
+  &-mediun {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    @include responsive(tablet-port) {
+      font-size: 2.2rem;
+      line-height: 2.5;
+    };
+    @include responsive(printer) {
+      font-size: 10pt;
+      line-height: 2.2;
+    };
+  }
+
+  &--extra {
+    color: var(--color-title);
+    margin-bottom: 1rem;
+  }
+
+}

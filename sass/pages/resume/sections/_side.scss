@@ -1,0 +1,27 @@
+.side {
+  display: none;
+  @include responsive(tablet-land){
+    display: block;
+    grid-column:  2 / 3;
+    grid-row: 1 / 7 ;
+  };
+
+  address {
+    margin-bottom: 1rem;
+  }
+
+  &__part {
+    &:not(:first-of-type) {
+      margin-top: 4rem;
+      @include responsive(printer) {
+        margin-top: 0pt;
+      };
+    }
+  }
+
+  &--alt {
+    @include responsive(tablet-land){
+      display: none;
+    };
+  }
+}

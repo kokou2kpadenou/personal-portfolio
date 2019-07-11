@@ -1,0 +1,69 @@
+@page {
+  margin: 0pt;
+}
+
+html {
+  // background-color: var(--color-doc-bg);
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%202%202%22%3E%3Cpath%20d%3D%22M1%202V0h1v1H0v1z%22%20fill-opacity%3D%22.05%22%2F%3E%3C%2Fsvg%3E");
+  background-size: 16px 16px;
+  @include responsive(printer) {
+    background-color: none;
+    background-image: none;
+  };
+}
+
+.doc {
+  padding: 0 20px;
+  @include responsive(printer) {
+    padding: 0;
+  };
+}
+
+.header {
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  transform: translateX(-50%);
+  width: 80vw;
+  @include responsive(desktop) {
+    width: 138rem;
+  };
+  @include responsive(printer) {
+    display: none;
+  };
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include responsive(tablet-port) {
+    justify-content: flex-end;
+  };
+}
+
+
+
+@import "resume/sections/intro";
+@import "resume/sections/side";
+@import "resume/sections/profile";
+@import "resume/sections/projects";
+@import "resume/sections/history";
+@import "resume/sections/education";
+@import "resume/sections/courses";
+
+.footer {
+  text-align: center;
+  margin: 50px auto 15px auto;
+  &__logo {
+    width: 6rem;
+    height: 6rem;
+  }
+  &__copy {
+    margin-top: 1.2rem;
+  }
+  @include responsive(printer) {
+    display: none;
+  };
+}

@@ -10,7 +10,7 @@
   --color-primary: #3f3f3f;
   --color-secondary: #fff;
   --color-tertiary: #f9f9f9;
-  --color-tilte: #1083ae;
+  --color-title: #1083ae;
 }
 
 html {
@@ -19,7 +19,6 @@ html {
   @supports (scroll-behavior: smooth) {
     scroll-behavior: smooth;
   }
-
 }
 
 body {
