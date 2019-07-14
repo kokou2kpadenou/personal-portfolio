@@ -1,6 +1,6 @@
-@page {
-  margin: 0pt;
-}
+// @page {
+//   margin: 0pt;
+// }
 
 html {
   // background-color: var(--color-doc-bg);
@@ -54,6 +54,7 @@ html {
 @import "resume/sections/courses";
 
 .footer {
+  color: #000;
   text-align: center;
   margin: 50px auto 15px auto;
   &__logo {

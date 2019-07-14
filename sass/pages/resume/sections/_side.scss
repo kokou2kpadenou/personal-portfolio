@@ -6,11 +6,13 @@
     grid-row: 1 / 7 ;
   };
 
-  address {
-    margin-bottom: 1rem;
-  }
 
   &__part {
+    &:first-of-type {
+      @include responsive(printer) {
+        margin-bottom: 5pt;
+      }
+    }
     &:not(:first-of-type) {
       margin-top: 4rem;
       @include responsive(printer) {

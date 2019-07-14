@@ -22,6 +22,7 @@ body {
 
 body {
   font-size: 1.7rem;
+  color: #666;
   font-family: 'Lato', sans-serif; }
   @media only screen and (min-width: 37.5em), only print {
     body {
@@ -61,7 +62,8 @@ body {
       line-height: 1.7; } }
   .text-mediun {
     font-size: 1.8rem;
-    line-height: 1.7; }
+    line-height: 1.7;
+    color: #000; }
     @media only screen and (min-width: 37.5em), only print {
       .text-mediun {
         font-size: 2.2rem;
@@ -118,20 +120,29 @@ body {
     height: 30px;
     fill: currentcolor; }
 
-.link:link, .link:visited {
-  color: #f66;
+.link {
   text-decoration: none; }
-
-.link:hover, .link:active {
-  color: var(--color-title); }
-
-@media only print {
-  .link--print svg {
-    display: none; }
-  .link--print::after {
-    content: "(" attr(href) ")"; }
-  .link--print h3 {
-    display: inline-block; } }
+  .link--oneline {
+    white-space: nowrap; }
+  .link:link, .link:visited {
+    color: #f66; }
+    @media only print {
+      .link:link, .link:visited {
+        color: #000; } }
+  .link:hover, .link:active {
+    color: var(--color-title); }
+    @media only print {
+      .link:hover, .link:active {
+        color: #000; } }
+  @media only print {
+    .link--print svg {
+      display: none; }
+    .link--print::after {
+      content: "(" attr(href) ")";
+      font-size: 9pt;
+      font-weight: normal; }
+    .link--print h3 {
+      display: inline-block; } }
 
 .list--1 {
   margin: 10px 0 0 15px; }
@@ -263,9 +274,8 @@ body {
         display: none; } }
   .title-bar__content {
     overflow: hidden; }
-
-@page {
-  margin: 0pt; }
+    .title-bar__content address {
+      margin-bottom: 2rem; }
 
 html {
   background-color: transparent;
@@ -334,8 +344,9 @@ html {
       display: block;
       grid-column: 2 / 3;
       grid-row: 1 / 7; } }
-  .side address {
-    margin-bottom: 1rem; }
+  @media only print {
+    .side__part:first-of-type {
+      margin-bottom: 5pt; } }
   .side__part:not(:first-of-type) {
     margin-top: 4rem; }
     @media only print {
@@ -362,6 +373,7 @@ html {
   grid-row: 5 / 6; }
 
 .footer {
+  color: #000;
   text-align: center;
   margin: 50px auto 15px auto; }
   .footer__logo {

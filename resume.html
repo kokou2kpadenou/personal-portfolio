@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Kokou Kpadenou Resume">
+    <meta name="description" content="Kokou Kpadenou Resume Front-end developer">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/resume.css">
-    <title>Resume - Kokou W Kpadenou</title>
+    <title>Resume - Kokou W. Kpadenou</title>
   </head>
   <body class="doc">
     <header class="header">
@@ -54,12 +54,18 @@
             <h2 class="title title--2">Front-End Developer</h2>
           </div>
           <p class="intro__conctact text">
-              <svg class="symbol">
-                <use xlink:href="#icon-location" href="#icon-location"></use>
-              </svg>Maryland, USA
-              <svg class="symbol">
-                <use xlink:href="#icon-telephone" href="#icon-telephone"></use>
-              </svg>240 408-6134
+              <a class="link" href="http://maps.google.com/?q=8309+Crooked+Pine+Ct,+Gaithersburg,+MD,+20877">
+                <svg class="symbol">
+                  <use xlink:href="#icon-location" href="#icon-location"></use>
+                </svg>
+                Maryland, USA
+              </a>
+              <a class="link" href="tel:2404086134">
+                <svg class="symbol">
+                  <use xlink:href="#icon-telephone" href="#icon-telephone"></use>
+                </svg>
+                240 408-6134
+              </a>
           </p>
         </section>
         <div class="page__section side">
@@ -90,15 +96,15 @@
                 </p>
 
                 <p class="text-mediun">
-                  <a class="link" href="tel:2404086034">
+                  <a class="link" href="tel:2404086134">
                     <svg class="symbol symbol--m">
                       <use xlink:href="#icon-telephone" href="#icon-telephone"></use>
                     </svg>
-                    240 408-6034
+                    240 408-6134
                   </a>
                 </p>
                 <p class="text-mediun">
-                  <a class="link" href="mailto:kokou2kpadenou@gmail.com">
+                  <a class="link link--oneline" href="mailto:kokou2kpadenou@gmail.com">
                     <svg class="symbol symbol--m">
                       <use xlink:href="#icon-email" href="#icon-email"></use>
                     </svg>
@@ -116,7 +122,7 @@
 
               </address>
               <p class="text text--extra">Nationality</p>
-              <p class="text">USA</p>
+              <p class="text-mediun">USA</p>
 
             </div>
           </section>
@@ -137,8 +143,8 @@
             </div>
             <div class="title-bar__content">
               <p class="text-mediun">HTML, CSS, JavaScript</p>
-              <p class="text-mediun">React, Redux, JQuery</p>
-              <p class="text-mediun">SQL, Git, SASS</p>
+              <p class="text-mediun">React, Redux, Sass</p>
+              <p class="text-mediun">SQL, Git, SVG</p>
               <p class="text-mediun">Clear communication</p>
               <p class="text-mediun">Organized</p>
               <p class="text-mediun">Problem-solving</p>
@@ -164,7 +170,7 @@
             <ul class="title-bar__content list--2">
                 <li class="text-mediun">FreeCodeCamp</li>
                 <li class="text-mediun">Udacity-Grow with Google Developer Scholarship: Front-End Web Dev</li>
-                <li class="text-mediun">Oracle PL/SQL Certified Associte</li>
+                <!-- <li class="text-mediun">Oracle PL/SQL Certified Associte</li> -->
 
             </ul>
           </section>
@@ -172,7 +178,7 @@
         <!-- Visible on small screen - side alternatif  -->
         <section class="page__section side--alt details">
           <input class="title-bar__checkbox" type="checkbox" id="details">
-          <div class="title-bar">
+          <div class="title-bar title-bar-click">
             <svg class="title-bar__icon">
               <use xlink:href="#icon-details" href="#icon-details"></use>
             </svg>
@@ -197,15 +203,15 @@
               </p>
 
               <p class="text-mediun">
-                <a class="link" href="tel:2404086034">
+                <a class="link" href="tel:2404086134">
                   <svg class="symbol symbol--m">
                     <use xlink:href="#icon-telephone" href="#icon-telephone"></use>
                   </svg>
-                  240 408-6034
+                  240 408-6134
                 </a>
               </p>
               <p class="text-mediun">
-                <a class="link" href="mailto:kokou2kpadenou@gmail.com">
+                <a class="link link--oneline" href="mailto:kokou2kpadenou@gmail.com">
                   <svg class="symbol symbol--m">
                     <use xlink:href="#icon-email" href="#icon-email"></use>
                   </svg>
@@ -228,7 +234,7 @@
         </section>
         <section class="page__section profile">
           <input class="title-bar__checkbox" type="checkbox" id="profile">
-          <div class="title-bar">
+          <div class="title-bar title-bar-click">
             <svg class="title-bar__icon">
               <use xlink:href="#icon-about" href="#icon-about"></use>
             </svg>
@@ -241,14 +247,14 @@
             </label>
           </div>
           <div class="title-bar__content">
-            <p class="text">Experienced and trusted IT professional, specialized in Web Front-End Development with a solid background in coding, design and debugging seeking the position of Web Front-End Developer in your company. Proficient in HTML, CSS, JavaScript, plus modern libraries and frameworks.</p>
+            <p class="text">Experienced and trusted Software Engineer, specialized in Web Front-end Development with a solid background in coding, design and debugging seeking the position of Front-end Developer in your company. Proficient in HTML, CSS, JavaScript, plus modern libraries and frameworks.</p>
           </div>
         </section>
         <!-- Visible on small screen - side alternatif  -->
         <section class="page__section side--alt skills">
           <input class="title-bar__checkbox" type="checkbox" id="skills">
 
-          <div class="title-bar">
+          <div class="title-bar title-bar-click">
             <svg class="title-bar__icon">
               <use xlink:href="#icon-skills" href="#icon-skills"></use>
             </svg>
@@ -261,7 +267,7 @@
             </label>
           </div>
           <div class="title-bar__content list--2 center">
-            <p class="text-mediun">HTML, CSS, JavaScript, React, Redux, JQuery, SQL, Git, SASS</p>
+            <p class="text-mediun">HTML, CSS, JavaScript, React, Redux, Sass, SQL, Git, SVG</p>
             <!-- <p class="text-mediun"></p> -->
             <!-- <p class="text-mediun"></p> -->
             <p class="text-mediun">Clear communication, Organized, Problem-solving, Attention to details</p>
@@ -273,7 +279,7 @@
         <section class="page__section projects">
           <input class="title-bar__checkbox" type="checkbox" id="projects">
 
-          <div class="title-bar">
+          <div class="title-bar title-bar-click">
             <svg class="title-bar__icon">
               <use xlink:href="#icon-projects" href="#icon-projects"></use>
             </svg>
@@ -287,31 +293,31 @@
           </div>
           <div class="title-bar__content">
             <p class="text">For more details and code sources, you can visit my website at www.kpadenou.net.</p>
-            <a class="link link--print" href="https://demo-middlebrook-peds.netlify.com/" target="_blank" rel="noreferrer nofollow">
-              <h3 class="title--3-f">
+            <h3 class="title--3-f">
+              <a class="link link--print" href="https://demo-middlebrook-peds.netlify.com" target="_blank" rel="noreferrer nofollow">
                 Middlebrook Pediatrics
                 <svg class="symbol symbol--m">
                   <use xlink:href="#icon-open-out" href="#icon-open-out"></use>
                 </svg>
-              </h3>
-            </a>
-            <p class="text">A modern and responsive website designed and developed for Middlebrook Pediatrics by using HTML, CSS and JavaScript only with tools like npm, SASS.</p>
-            <a class="link link--print" href="https://fylo-kpadenou.netlify.com" target="_blank" rel="noreferrer nofollow">
-              <h3 class="title--3-f">
+              </a>
+            </h3>
+            <p class="text">A modern and responsive website designed and developed for Middlebrook Pediatrics using HTML, CSS and JavaScript only with tools like npm, Sass.</p>
+            <h3 class="title--3-f">
+              <a class="link link--print" href="https://fylo-kpadenou.netlify.com" target="_blank" rel="noreferrer nofollow">
                 Fylo landing page
                 <svg class="symbol symbol--m">
                   <use xlink:href="#icon-open-out" href="#icon-open-out"></use>
                 </svg>
-              </h3>
-            </a>
-            <p class="text">This project was built with HTML, CSS and JavaScript from provided design, starter code, project brief and front-end style guide like in a real company.</p>
+              </a>
+            </h3>
+            <p class="text">This project was built with HTML, CSS and JavaScript from design, starter code, project brief and front-end style guide provided by Frontend Mentor.</p>
 
           </div>
         </section>
         <section class="page__section history">
           <input class="title-bar__checkbox" type="checkbox" id="history">
 
-          <div class="title-bar">
+          <div class="title-bar title-bar-click">
             <svg class="title-bar__icon">
               <use xlink:href="#icon-history" href="#icon-history"></use>
             </svg>
@@ -331,23 +337,23 @@
               </div>
               <div class="col--2">
                 <h3 class="title--3">Application support officer, eProcess Int., SA</h3>
-                <p class="text">eProcess, Ecobank's IT subsidiary, is an IT Service Management System Supporting Ecobank Affiliates in 33 africa countries.</p>
+                <p class="text">eProcess, Ecobank's IT subsidiary, is an IT service management system for Ecobank's subsidiaries in 33 African countries.</p>
                 <ul class="text list--1">
                   <li class="">Oversee the implementation and migration of the Internet Banking System which serves approximately 150,000 customers based on Oracle database, APACHE and WebLogic.</li>
                   <!-- <li class="">Responsible for backing up, archive and update the Online Banking System.</li> -->
-                  <li class="">Access and administer issues regarding public keys and patches as needed. Configure and administer hundreds of ATM on Nomad Cortex platform.</li>
+                  <li class="">Access and administer issues regarding public keys and patches as needed. Configure and administer hundreds of ATM on Nomad Cortex platform (ATM switch).</li>
                 </ul>
               </div>
 
             </div>
             <div class="col">
               <div class="col--1">
-                <p class="text text--extra">Jun 02 - Feb 03</p>
+                <p class="text text--extra">Jun 02 - Feb 04</p>
                 <p class="text">Lome - Togo</p>
               </div>
               <div class="col--2">
                 <h3 class="title--3">Oracle Developer, Africom-Togo</h3>
-                <p class="text">Africom-Togo was the official Oracle partner in TOGO.</p>
+                <p class="text">Africom-Togo was the official Oracle partner in Togo.</p>
                 <ul class="text list--1">
                   <li class="">Developed applications for customers using Oracle Database, Oracle Form, PL/SQL.</li>
                   <li class="">Responsible for the analysis, designing and coding of databases.</li>
@@ -360,7 +366,7 @@
         <section class="page__section education">
           <input class="title-bar__checkbox" type="checkbox" id="education">
 
-          <div class="title-bar">
+          <div class="title-bar title-bar-click">
             <svg class="title-bar__icon">
               <use xlink:href="#icon-education" href="#icon-education"></use>
             </svg>
@@ -390,7 +396,7 @@
         <section class="page__section side--alt courses">
           <input class="title-bar__checkbox" type="checkbox" id="courses">
 
-          <div class="title-bar">
+          <div class="title-bar title-bar-click">
             <svg class="title-bar__icon">
               <use xlink:href="#icon-certificate" href="#icon-certificate"></use>
             </svg>
@@ -405,7 +411,7 @@
           <ul class="title-bar__content list--2">
               <li class="text-mediun">FreeCodeCamp</li>
               <li class="text-mediun">Udacity-Grow with Google Developer Scholarship: Front-End Web Dev</li>
-              <li class="text-mediun">Oracle PL/SQL Certified Associte</li>
+              <!-- <li class="text-mediun">Oracle PL/SQL Certified Associte</li> -->
 
           </ul>
         </section>
