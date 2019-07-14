@@ -84,6 +84,12 @@ body {
     width: 6rem;
     height: 6rem; }
 
+.mark {
+  background-color: var(--color-title);
+  color: var(--color-secondary);
+  padding: 0 2px;
+  border-radius: 2px; }
+
 .contact {
   list-style: none;
   margin: 2rem 0; }
@@ -111,20 +117,29 @@ body {
     height: 4rem;
     fill: currentcolor; }
 
-.link:link, .link:visited {
-  color: #f66;
+.link {
   text-decoration: none; }
-
-.link:hover, .link:active {
-  color: var(--color-title); }
-
-@media only print {
-  .link--print svg {
-    display: none; }
-  .link--print::after {
-    content: "(" attr(href) ")"; }
-  .link--print h3 {
-    display: inline-block; } }
+  .link--oneline {
+    white-space: nowrap; }
+  .link:link, .link:visited {
+    color: #f66; }
+    @media only print {
+      .link:link, .link:visited {
+        color: #000; } }
+  .link:hover, .link:active {
+    color: var(--color-title); }
+    @media only print {
+      .link:hover, .link:active {
+        color: #000; } }
+  @media only print {
+    .link--print svg {
+      display: none; }
+    .link--print::after {
+      content: "(" attr(href) ")";
+      font-size: 9pt;
+      font-weight: normal; }
+    .link--print h3 {
+      display: inline-block; } }
 
 .btn {
   text-decoration: none;
@@ -151,8 +166,11 @@ body {
       height: 2.5rem;
       vertical-align: middle; }
   .btn--menu {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 19rem;
+    height: 19rem;
     padding: 1rem;
     border-radius: 5px;
     border-color: transparent; }
@@ -252,7 +270,7 @@ body {
 .skill__screen-desc {
   margin: 4rem auto 0 auto;
   max-width: 60rem;
-  min-height: 26rem; }
+  min-height: 18rem; }
 
 .cert {
   margin: 10rem 0;
@@ -341,6 +359,7 @@ body {
   border: 1px solid transparent;
   border-radius: 5px;
   cursor: pointer;
+  user-select: none;
   transition: all .4s; }
 
 .navigation__icon {
@@ -433,8 +452,7 @@ body {
   grid-gap: 6rem; }
   @media only screen and (min-width: 37.5em), only print {
     .project {
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-      grid-auto-rows: 35rem; } }
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); } }
   .project__tile {
     padding: 3rem;
     border: 1px solid rgba(0, 0, 0, 0.1);

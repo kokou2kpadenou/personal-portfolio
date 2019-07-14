@@ -33,8 +33,11 @@
   }
 
   &--menu {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 19rem;
+    height: 19rem;
     padding: 1rem;
     border-radius: 5px;
     border-color: transparent;
