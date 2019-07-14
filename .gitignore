@@ -1,5 +1,4 @@
 /node_modules
 /build
 *.log*
-css/style.comp.css
-css/style.prefix.css
+/css
